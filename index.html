@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Intelligent Business Idea / Grow Business Validator</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fonts: futuristic heading + modern body -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Orbitron:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- AOS for scroll animations -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <link href="assets/css/inner.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR (responsive, accessible) -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-3 sticky-top" id="siteNavbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Idea Validator</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cta">Get Started</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero-section" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 text-white text-center text-lg-start">
+                    <h1 class="display-5 fw-bold hero-title" data-aos="fade-up">Validate Your Business Ideas Instantly
+                    </h1>
+                    <p class="lead my-4" data-aos="fade-up" data-aos-delay="100">AI-powered insights for smarter
+                        business decisions</p>
+                    <div class="d-flex gap-3 flex-wrap" data-aos="fade-up" data-aos-delay="200">
+                        <a href="#pricing" class="btn btn-glass btn-lg hero-cta" id="getStarted">Get Started</a>
+                        <a href="#demo" class="btn btn-outline-light btn-lg hero-cta" id="seeDemo">See Demo</a>
+                    </div>
+                    <div class="mt-4 d-flex gap-4 stats">
+                        <div class="text-center text-white" data-aos="fade-up" data-aos-delay="300">
+                            <div class="h2 mb-0" id="counter-ideas">0</div>
+                            <small>Ideas Validated</small>
+                        </div>
+                        <div class="text-center text-white" data-aos="fade-up" data-aos-delay="350">
+                            <div class="h2 mb-0" id="counter-predictions">0</div>
+                            <small>Risk Predictions</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-none d-lg-block text-center" data-aos="zoom-in">
+                    <!-- simple animated SVG illustration -->
+                    <div class="illustration">
+                        <svg width="320" height="320" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"
+                            role="img" aria-hidden="true">
+                            <defs>
+                                <linearGradient id="g1" x1="0%" x2="100%" y1="0%" y2="100%">
+                                    <stop offset="0%" stop-color="#7f00ff" />
+                                    <stop offset="100%" stop-color="#ff5a7d" />
+                                </linearGradient>
+                            </defs>
+                            <g transform="translate(100,100)">
+                                <circle r="60" fill="url(#g1)" class="pulse" opacity="0.9" />
+                                <g transform="translate(-20,-10)">
+                                    <rect x="-10" y="-6" width="60" height="36" rx="6" fill="#fff" opacity="0.12" />
+                                    <path d="M0 0 L30 -20 L40 0 L30 20 Z" fill="#fff" opacity="0.16" />
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- smooth scroll-down icon -->
+    <div class="scroll-down-wrap">
+        <a href="#features" class="scroll-down" aria-label="Scroll down">
+            <span class="chev"></span>
+            <span class="chev"></span>
+            <span class="chev"></span>
+        </a>
+    </div>
+
+    <!-- FEATURES -->
+    <section id="features" class="feature-section mt-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="title">Powerful features to validate, refine and grow</h2>
+                <p class="subtitle">Everything you need to turn an idea into an actionable opportunity.</p>
+            </div>
+            <div class="row g-4">
+                <!-- feature cards looped manually -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="50">
+                    <div class="feature-card p-4 h-100">
+                        <div class="icon mb-3 text-primary"><i class="fa-solid fa-brain fa-2x"></i></div>
+                        <h5>Smart Idea Analysis</h5>
+                        <p class="feature-item-title">AI-driven scoring and actionable insights to evaluate potential.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="80">
+                    <div class="feature-card p-4 h-100">
+                        <div class="icon mb-3 text-success"><i class="fa-solid fa-chart-pie fa-2x"></i></div>
+                        <h5>Validation Score & Risk Assessment</h5>
+                        <p class="feature-item-title">Color-coded charts and badges show your score and risk categories.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="110">
+                    <div class="feature-card p-4 h-100">
+                        <div class="icon mb-3 text-danger"><i class="fa-solid fa-search fa-2x"></i></div>
+                        <h5>Competitor & Market Insights</h5>
+                        <p class="feature-item-title">Understand competitors and market fit at a glance.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="140">
+                    <div class="feature-card p-4 h-100">
+                        <div class="icon mb-3 text-warning"><i class="fa-solid fa-clipboard-list fa-2x"></i></div>
+                        <h5>SWOT Analysis</h5>
+                        <p class="feature-item-title">Auto-generated strengths, weaknesses, opportunities, and threats.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="170">
+                    <div class="feature-card p-4 h-100">
+                        <div class="icon mb-3 text-info"><i class="fa-solid fa-lightbulb fa-2x"></i></div>
+                        <h5>Idea Refinement Suggestions</h5>
+                        <p class="feature-item-title">Practical suggestions to make an idea more viable.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card p-4 h-100">
+                        <div class="icon mb-3 text-secondary"><i class="fa-solid fa-globe fa-2x"></i></div>
+                        <h5>Industry & Region Specific Analysis</h5>
+                        <p class="feature-item-title">Tailor insights by industry and geography.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="230">
+                    <div class="feature-card p-4 h-100">
+                        <div class="icon mb-3 text-primary"><i class="fa-solid fa-flask fa-2x"></i></div>
+                        <h5>Scenario Simulation</h5>
+                        <p class="feature-item-title">Simulate outcomes across assumptions and scenarios.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="260">
+                    <div class="feature-card p-4 h-100">
+                        <div class="icon mb-3 text-success"><i class="fa-solid fa-bell fa-2x"></i></div>
+                        <h5>Custom Alerts & Notifications</h5>
+                        <p class="feature-item-title">Stay informed with tailored alerts and thresholds.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- THEME SECTION -->
+    <section id="themes" class="theme-section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="title">Themes</h2>
+                <p class="subtitle">Pick a look and feel for your workspace — these are just samples.</p>
+            </div>
+            <div class="row g-4 themes">
+                <div class="col-sm-6 col-md-4" data-aos="fade-up" data-aos-delay="50">
+                    <div class="theme-card"
+                        style="background-image:url('https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=3b8e9b7f1a5b2b0a9f063e7d1c1c6f8d');">
+                        <div class="theme-overlay"></div>
+                        <div class="theme-meta">
+                            <h5 class="mb-0">Neon Gradient</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4" data-aos="fade-up" data-aos-delay="80">
+                    <div class="theme-card"
+                        style="background-image:url('https://images.unsplash.com/photo-1519337265831-281ec6cc8514?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=0f0c3f6f4b4b5c5a6f6a6f0d0c9d2a6b');">
+                        <div class="theme-overlay"></div>
+                        <div class="theme-meta">
+                            <h5 class="mb-0">Midnight Blue</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4" data-aos="fade-up" data-aos-delay="110">
+                    <div class="theme-card"
+                        style="background-image:url('https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d');">
+                        <div class="theme-overlay"></div>
+                        <div class="theme-meta">
+                            <h5 class="mb-0">Frosted Tech</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="fw-bold text-dark">Pricing that scales with your ambition</h2>
+                <p class="text-muted">Monthly and yearly billing — switch to see savings.</p>
+                <div class="form-check form-switch d-inline-block ms-3">
+                    <input class="form-check-input" type="checkbox" id="billingToggle">
+                    <label class="form-check-label text-dark" for="billingToggle">Yearly (save 20%)</label>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="50">
+                    <div class="card h-100 pricing-card">
+                        <div class="card-body text-center p-4">
+                            <h5 class="card-title">Starter</h5>
+                            <div class="price my-3"><span class="currency">$</span><span class="amount"
+                                    data-monthly="29" data-yearly="23">29</span><small class="text-muted">/mo</small>
+                            </div>
+                            <p class="text-muted">For solo founders validating early ideas.</p>
+                            <ul class="list-unstyled mt-3 mb-4 text-start">
+                                <li>50 idea checks / month</li>
+                                <li>Basic insights</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary">Choose Starter</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="80">
+                    <div class="card h-100 pricing-card popular">
+                        <div class="ribbon">Most popular</div>
+                        <div class="card-body text-center p-4">
+                            <h5 class="card-title">Growth</h5>
+                            <div class="price my-3"><span class="currency">$</span><span class="amount"
+                                    data-monthly="79" data-yearly="63">79</span><small class="text-muted">/mo</small>
+                            </div>
+                            <p class="text-muted">For scaling startups and small teams.</p>
+                            <ul class="list-unstyled mt-3 mb-4 text-start">
+                                <li>500 idea checks / month</li>
+                                <li>Advanced insights & reports</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary">Choose Growth</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="110">
+                    <div class="card h-100 pricing-card">
+                        <div class="card-body text-center p-4">
+                            <h5 class="card-title">Enterprise</h5>
+                            <div class="price my-3"><span class="currency">$</span><span class="amount"
+                                    data-monthly="199" data-yearly="159">199</span><small class="text-muted">/mo</small>
+                            </div>
+                            <p class="text-muted">For large teams, custom integrations and SLA.</p>
+                            <ul class="list-unstyled mt-3 mb-4 text-start">
+                                <li>Unlimited checks</li>
+                                <li>Dedicated support</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary">Contact Sales</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS (upgraded premium design) -->
+    <section id="testimonials" class="testimonial-section">
+        <div class="container">
+            <div class="text-center mb-4" data-aos="fade-up">
+                <h2 class="fw-bold">What users say</h2>
+                <p class="mt-2 mb-0 text-white-75">This tool turned our vague idea into a focused plan. The
+                    validation score was spot on and helped us raise a seed round.
+                </p>
+            </div>
+
+            <div id="testimonialCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                data-aos="fade-up">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="testimonial-card p-4 mx-auto shadow-lg">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <img src="https://i.pravatar.cc/72?img=12" class="avatar img-fluid" alt="Aisha K.">
+                                <div>
+                                    <h6 class="mb-0 text-white">Aisha K.</h6>
+                                    <small class="text-white">Founder, HealthTech</small>
+                                </div>
+                                <div class="ms-auto rating text-warning" aria-hidden="true">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                            </div>
+                            <div class="quote-mark">“</div>
+                            <p class="mt-2 mb-0 text-white-75">This tool turned our vague idea into a focused plan. The
+                                validation score was spot on and helped us raise a seed round.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-card p-4 mx-auto shadow-lg">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <img src="https://i.pravatar.cc/72?img=32" class="avatar img-fluid" alt="Marc R.">
+                                <div>
+                                    <h6 class="mb-0 text-white">Marc R.</h6>
+                                    <small class="text-white">Product Lead, FinServ</small>
+                                </div>
+                                <div class="ms-auto rating text-warning" aria-hidden="true">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="quote-mark">“</div>
+                            <p class="mt-2 mb-0 text-white-75">This tool turned our vague idea into a focused plan. The
+                                validation score was spot on and helped us raise a seed round.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev custom" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="prev">
+                    <span class="custom-control-prev-icon" aria-hidden="true"><i
+                            class="fa-solid fa-chevron-left"></i></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next custom" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="next">
+                    <span class="custom-control-next-icon" aria-hidden="true"><i
+                            class="fa-solid fa-chevron-right"></i></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- decorative soft glow shapes -->
+        <div class="testimonial-glow glow-left"></div>
+        <div class="testimonial-glow glow-right"></div>
+    </section>
+
+    <!-- CTA -->
+    <section id="cta" class="section-base text-center text-white">
+        <div class="container">
+            <div class="cta-inner mx-auto" data-aos="zoom-in">
+                <h2 class="fw-bold lead text-white-75 mb-3">Start Validating Your Ideas Now</h2>
+                <p class="mb-4 lead text-white-75">Join thousands who validate smarter, faster, and with confidence.</p>
+                <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-glass btn-lg btn-cta me-3" data-aos="zoom-in" data-aos-delay="120">Get
+                        Started — Free</a>
+                    <a href="#demo" class="btn btn-outline-light btn-lg btn-cta" data-aos="zoom-in"
+                        data-aos-delay="180">See Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <!-- footer uses .section-base to align spacing with other sections -->
+    <footer class="site-footer section-base">
+        <div class="container">
+            <div class="row g-4 align-items-start">
+                <div class="col-lg-5 col-md-12">
+                    <a class="navbar-brand fw-bold mb-2 d-inline-block text-white" href="#home">Idea Validator</a>
+                    <p class="text-white-50">AI-driven validation and market insights to turn ideas into winning
+                        products. Fast, data-backed, and tailored to your industry.</p>
+
+                    <form class="subscribe-form d-flex mt-3" id="subscribeForm">
+                        <input type="email" class="form-control form-control-sm me-2" id="subscribeEmail"
+                            placeholder="Your email" aria-label="Email">
+                        <button class="btn btn-sm btn-glass" type="submit">Subscribe</button>
+                    </form>
+                    <div id="subscribeMessage" class="small mt-2" aria-live="polite"></div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="text-white">Quick links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#features" class="footer-link">Features</a></li>
+                        <li><a href="#pricing" class="footer-link">Pricing</a></li>
+                        <li><a href="#testimonials" class="footer-link">Testimonials</a></li>
+                        <li><a href="#" class="footer-link">Privacy</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <h6 class="text-white">Contact</h6>
+                    <p class="text-white-50 small mb-2">hello@idea-validate.ai<br>+1 (555) 123-4567</p>
+                    <div class="d-flex gap-3 mt-2">
+                        <a href="#" class="social-link" aria-label="Twitter"><i
+                                class="fa-brands fa-twitter fa-lg"></i></a>
+                        <a href="#" class="social-link" aria-label="LinkedIn"><i
+                                class="fa-brands fa-linkedin fa-lg"></i></a>
+                        <a href="#" class="social-link" aria-label="Facebook"><i
+                                class="fa-brands fa-facebook fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-4 border-white-10">
+
+            <div class="d-flex justify-content-center">
+                <div class="text-white-50">© 2025 Intelligent Business Idea / Grow Business Validator</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Feature detail modal -->
+    <div class="modal fade" id="featureModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="featureModalLabel">Feature</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="featureModalBody">Details...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts: jQuery, Bootstrap, AOS, Chart.js, CountUp.js -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/countup.js@2.0.8/dist/countUp.umd.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

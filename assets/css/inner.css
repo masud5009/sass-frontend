@@ -1,0 +1,22 @@
+section.inner-banner {
+    padding: 70px 0px 52px 0px;
+}
+
+.pricing-section .pricing-tabs .nav-tabs {
+    border-bottom: unset;
+}
+
+.pricing-section .pricing-tabs .pricing-tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing-section .pricing-tabs .nav-link.active {
+    color: rebeccapurple;
+    border: none;
+    background: red;
+    outline: none;
+    color: #fff;
+    border-radius: 7px;
+}
