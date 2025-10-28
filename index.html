@@ -52,8 +52,7 @@
                     <p class="lead my-4" data-aos="fade-up" data-aos-delay="100">AI-powered insights for smarter
                         business decisions</p>
                     <div class="d-flex gap-3 flex-wrap" data-aos="fade-up" data-aos-delay="200">
-                        <a href="#pricing" class="btn btn-glass btn-lg hero-cta" id="getStarted">Get Started</a>
-                        <a href="#demo" class="btn btn-outline-light btn-lg hero-cta" id="seeDemo">See Demo</a>
+                        <a href="pricing.html" class="btn btn-glass btn-lg hero-cta" id="getStarted">Get Started</a>
                     </div>
                     <div class="mt-4 d-flex gap-4 stats">
                         <div class="text-center text-white" data-aos="fade-up" data-aos-delay="300">
@@ -222,68 +221,203 @@
     <!-- PRICING -->
     <section id="pricing" class="pricing-section">
         <div class="container">
-            <div class="text-center mb-5" data-aos="fade-up">
-                <h2 class="fw-bold text-dark">Pricing that scales with your ambition</h2>
-                <p class="text-muted">Monthly and yearly billing — switch to see savings.</p>
-                <div class="form-check form-switch d-inline-block ms-3">
-                    <input class="form-check-input" type="checkbox" id="billingToggle">
-                    <label class="form-check-label text-dark" for="billingToggle">Yearly (save 20%)</label>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="heading text-center mb-5" data-aos="fade-up">
+                        <span class="subtitle text-primary">Pricing Plans</span>
+                        <h2 class="text-white">Choose Your Perfect Plan</h2>
+                        <p class="text-muted">Select the best plan that fits your needs. All plans include a 14-day free
+                            trial.</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="50">
-                    <div class="card h-100 pricing-card">
-                        <div class="card-body text-center p-4">
-                            <h5 class="card-title">Starter</h5>
-                            <div class="price my-3"><span class="currency">$</span><span class="amount"
-                                    data-monthly="29" data-yearly="23">29</span><small class="text-muted">/mo</small>
+            <div class="text-center mb-4" data-aos="fade-up">
+                <nav class="pricing-tabs">
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link" id="monthly-tab" data-bs-toggle="tab" data-bs-target="#monthly"
+                            type="button" role="tab" aria-controls="monthly" aria-selected="true">Monthly</button>
+                        <button class="nav-link active" id="yearly-tab" data-bs-toggle="tab" data-bs-target="#yearly"
+                            type="button" role="tab" aria-controls="yearly" aria-selected="false">Yearly <span
+                                class="badge bg-primary ms-2">Save 20%</span></button>
+                        <button class="nav-link" id="lifetime-tab" data-bs-toggle="tab" data-bs-target="#lifetime"
+                            type="button" role="tab" aria-controls="lifetime" aria-selected="false">Lifetime</button>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade" id="monthly" role="tabpanel" aria-labelledby="monthly-tab">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="50">
+                            <div class="card h-100 pricing-card">
+                                <div class="card-body text-center p-4">
+                                    <h5 class="card-title">Starter</h5>
+                                    <div class="price my-3"><span class="currency">$</span><span class="amount"
+                                            data-monthly="29" data-yearly="23">29</span><small
+                                            class="text-muted">/month</small>
+                                    </div>
+                                    <p class="text-muted">For solo founders validating early ideas.</p>
+                                    <ul class="list-unstyled mt-3 mb-4 text-start">
+                                        <li>50 idea checks / month</li>
+                                        <li>Basic insights</li>
+                                    </ul>
+                                    <a href="#" class="btn btn-outline-primary">Choose Starter</a>
+                                </div>
                             </div>
-                            <p class="text-muted">For solo founders validating early ideas.</p>
-                            <ul class="list-unstyled mt-3 mb-4 text-start">
-                                <li>50 idea checks / month</li>
-                                <li>Basic insights</li>
-                            </ul>
-                            <a href="#" class="btn btn-outline-primary">Choose Starter</a>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="80">
+                            <div class="card h-100 pricing-card popular">
+                                <div class="ribbon">Most popular</div>
+                                <div class="card-body text-center p-4">
+                                    <h5 class="card-title">Growth</h5>
+                                    <div class="price my-3"><span class="currency">$</span><span class="amount"
+                                            data-monthly="79" data-yearly="63">79</span><small
+                                            class="text-muted">/month</small>
+                                    </div>
+                                    <p class="text-muted">For scaling startups and small teams.</p>
+                                    <ul class="list-unstyled mt-3 mb-4 text-start">
+                                        <li>500 idea checks / month</li>
+                                        <li>Advanced insights & reports</li>
+                                    </ul>
+                                    <a href="#" class="btn btn-primary">Choose Growth</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="110">
+                            <div class="card h-100 pricing-card">
+                                <div class="card-body text-center p-4">
+                                    <h5 class="card-title">Enterprise</h5>
+                                    <div class="price my-3"><span class="currency">$</span><span class="amount"
+                                            data-monthly="199" data-yearly="159">199</span><small
+                                            class="text-muted">/month</small>
+                                    </div>
+                                    <p class="text-muted">For large teams, custom integrations and SLA.</p>
+                                    <ul class="list-unstyled mt-3 mb-4 text-start">
+                                        <li>Unlimited checks</li>
+                                        <li>Dedicated support</li>
+                                    </ul>
+                                    <a href="#" class="btn btn-outline-primary">Contact Sales</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="80">
-                    <div class="card h-100 pricing-card popular">
-                        <div class="ribbon">Most popular</div>
-                        <div class="card-body text-center p-4">
-                            <h5 class="card-title">Growth</h5>
-                            <div class="price my-3"><span class="currency">$</span><span class="amount"
-                                    data-monthly="79" data-yearly="63">79</span><small class="text-muted">/mo</small>
+                <div class="tab-pane fade show active" id="yearly" role="tabpanel" aria-labelledby="yearly-tab">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="50">
+                            <div class="card h-100 pricing-card">
+                                <div class="card-body text-center p-4">
+                                    <h5 class="card-title">Starter</h5>
+                                    <div class="price my-3"><span class="currency">$</span><span class="amount"
+                                            data-monthly="29" data-yearly="23">29</span><small
+                                            class="text-muted">/year</small>
+                                    </div>
+                                    <p class="text-muted">For solo founders validating early ideas.</p>
+                                    <ul class="list-unstyled mt-3 mb-4 text-start">
+                                        <li>50 idea checks / month</li>
+                                        <li>Basic insights</li>
+                                    </ul>
+                                    <a href="#" class="btn btn-outline-primary">Choose Starter</a>
+                                </div>
                             </div>
-                            <p class="text-muted">For scaling startups and small teams.</p>
-                            <ul class="list-unstyled mt-3 mb-4 text-start">
-                                <li>500 idea checks / month</li>
-                                <li>Advanced insights & reports</li>
-                            </ul>
-                            <a href="#" class="btn btn-primary">Choose Growth</a>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="80">
+                            <div class="card h-100 pricing-card popular">
+                                <div class="ribbon">Most popular</div>
+                                <div class="card-body text-center p-4">
+                                    <h5 class="card-title">Growth</h5>
+                                    <div class="price my-3"><span class="currency">$</span><span class="amount"
+                                            data-monthly="79" data-yearly="63">79</span><small
+                                            class="text-muted">/year</small>
+                                    </div>
+                                    <p class="text-muted">For scaling startups and small teams.</p>
+                                    <ul class="list-unstyled mt-3 mb-4 text-start">
+                                        <li>500 idea checks / month</li>
+                                        <li>Advanced insights & reports</li>
+                                    </ul>
+                                    <a href="#" class="btn btn-primary">Choose Growth</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="110">
+                            <div class="card h-100 pricing-card">
+                                <div class="card-body text-center p-4">
+                                    <h5 class="card-title">Enterprise</h5>
+                                    <div class="price my-3"><span class="currency">$</span><span class="amount"
+                                            data-monthly="199" data-yearly="159">199</span><small
+                                            class="text-muted">/year</small>
+                                    </div>
+                                    <p class="text-muted">For large teams, custom integrations and SLA.</p>
+                                    <ul class="list-unstyled mt-3 mb-4 text-start">
+                                        <li>Unlimited checks</li>
+                                        <li>Dedicated support</li>
+                                    </ul>
+                                    <a href="#" class="btn btn-outline-primary">Contact Sales</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="110">
-                    <div class="card h-100 pricing-card">
-                        <div class="card-body text-center p-4">
-                            <h5 class="card-title">Enterprise</h5>
-                            <div class="price my-3"><span class="currency">$</span><span class="amount"
-                                    data-monthly="199" data-yearly="159">199</span><small class="text-muted">/mo</small>
+                <div class="tab-pane fade" id="lifetime" role="tabpanel" aria-labelledby="lifetime-tab">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="50">
+                            <div class="card h-100 pricing-card">
+                                <div class="card-body text-center p-4">
+                                    <h5 class="card-title">Starter</h5>
+                                    <div class="price my-3"><span class="currency">$</span><span class="amount"
+                                            data-monthly="29" data-yearly="23">29</span>
+                                    </div>
+                                    <p class="text-muted">For solo founders validating early ideas.</p>
+                                    <ul class="list-unstyled mt-3 mb-4 text-start">
+                                        <li>50 idea checks / month</li>
+                                        <li>Basic insights</li>
+                                    </ul>
+                                    <a href="#" class="btn btn-outline-primary">Choose Starter</a>
+                                </div>
                             </div>
-                            <p class="text-muted">For large teams, custom integrations and SLA.</p>
-                            <ul class="list-unstyled mt-3 mb-4 text-start">
-                                <li>Unlimited checks</li>
-                                <li>Dedicated support</li>
-                            </ul>
-                            <a href="#" class="btn btn-outline-primary">Contact Sales</a>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="80">
+                            <div class="card h-100 pricing-card popular">
+                                <div class="ribbon">Most popular</div>
+                                <div class="card-body text-center p-4">
+                                    <h5 class="card-title">Growth</h5>
+                                    <div class="price my-3"><span class="currency">$</span><span class="amount"
+                                            data-monthly="79" data-yearly="63">79</span>
+                                    </div>
+                                    <p class="text-muted">For scaling startups and small teams.</p>
+                                    <ul class="list-unstyled mt-3 mb-4 text-start">
+                                        <li>500 idea checks / month</li>
+                                        <li>Advanced insights & reports</li>
+                                    </ul>
+                                    <a href="#" class="btn btn-primary">Choose Growth</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="110">
+                            <div class="card h-100 pricing-card">
+                                <div class="card-body text-center p-4">
+                                    <h5 class="card-title">Enterprise</h5>
+                                    <div class="price my-3"><span class="currency">$</span><span class="amount"
+                                            data-monthly="199" data-yearly="159">199</span>
+                                    </div>
+                                    <p class="text-muted">For large teams, custom integrations and SLA.</p>
+                                    <ul class="list-unstyled mt-3 mb-4 text-start">
+                                        <li>Unlimited checks</li>
+                                        <li>Dedicated support</li>
+                                    </ul>
+                                    <a href="#" class="btn btn-outline-primary">Contact Sales</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>

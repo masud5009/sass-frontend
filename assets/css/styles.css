@@ -1,5 +1,8 @@
 /* Global theme and gradients */
 :root {
+  --primary-color: #051027;
+  --primary-gradient: linear-gradient(180deg, #051025 0%, #06122b 100%);
+  --white-color: #fff;
   --gradient-1: linear-gradient(135deg, #7f00ff 0%, #ff5a7d 100%);
   --bg-dark-grad: linear-gradient(180deg, #0f1724 0%, #071027 100%);
 }
@@ -17,7 +20,7 @@ body {
   font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, 'Helvetica Neue', Arial;
   line-height: 1.5;
   color: #e6eefb;
-  background: linear-gradient(180deg, #051025 0%, #06122b 100%)
+  background: var(--primary-gradient)
 }
 
 
@@ -40,7 +43,7 @@ h5 {
 }
 
 .navbar .navbar-brand {
-  color: #fff;
+  color: var(--white-color);
   font-weight: 700;
   letter-spacing: 0.6px
 }
@@ -50,7 +53,7 @@ h5 {
 }
 
 .navbar .nav-link:hover {
-  color: #fff
+  color: var(--white-color)
 }
 
 .navbar-toggler {
@@ -71,7 +74,7 @@ h5 {
   background: radial-gradient(800px 300px at 10% 25%, rgba(127, 0, 255, 0.14), transparent 10%),
     radial-gradient(800px 300px at 90% 75%, rgba(255, 90, 125, 0.08), transparent 10%),
     linear-gradient(90deg, #02122d 0%, #03193b 50%, #061633 100%);
-  color: #fff;
+  color: var(--white-color);
   height: 85vh;
 }
 
@@ -95,7 +98,7 @@ h5 {
 .btn-glass {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.03));
   border: 1px solid rgba(255, 255, 255, 0.12);
-  color: #fff;
+  color: var(--white-color);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   box-shadow: 0 12px 30px rgba(18, 8, 60, 0.28);
@@ -187,6 +190,18 @@ h5 {
 }
 
 /* Theme cards */
+.theme-section {
+  padding: 4.5rem 0;
+}
+
+.theme-section .title {
+  font-weight: 600;
+}
+
+.theme-section .themes {
+  height: 500px;
+}
+
 .theme-card {
   position: relative;
   height: 100%;
@@ -219,7 +234,7 @@ h5 {
 }
 
 .theme-card h5 {
-  color: #fff;
+  color: var(--white-color);
   margin: 0;
   font-weight: 700
 }
@@ -228,7 +243,6 @@ h5 {
   background-repeat: no-repeat
 }
 
-/* On hover slowly scroll background vertically */
 .theme-card {
   background-position: center top;
   transition: background-position 8s linear, transform .28s ease
@@ -254,12 +268,10 @@ h5 {
   font-weight: 600;
 }
 
-
 .feature-section p {
   margin-bottom: 1rem
 }
 
-/* Slightly smaller headings on small devices to avoid wrapping */
 @media (max-width:575px) {
   h1 {
     font-size: 1.9rem
@@ -274,7 +286,6 @@ h5 {
   }
 }
 
-/* Card shadows toned down on small devices for performance */
 @media (max-width:767px) {
 
   .feature-card,
@@ -310,7 +321,6 @@ h5 {
   font-weight: 700
 }
 
-/* Features */
 .feature-card {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.025), rgba(255, 255, 255, 0.01));
   border-radius: 12px;
@@ -342,22 +352,9 @@ h5 {
   font-size: 0.95rem
 }
 
-/*them*/
-.theme-section {
-  padding: 4.5rem 0;
-}
-
-.theme-section .title {
-  font-weight: 600;
-}
-
-.theme-section .themes {
-  height: 500px;
-}
-
 /* Pricing */
 .pricing-section {
-  background-color: #fff;
+  background-color: var(--white-color);
   padding: 4.5rem 0;
 }
 
@@ -383,7 +380,7 @@ h5 {
   left: -53px;
   top: 26px;
   background: var(--gradient-1);
-  color: #fff;
+  color: var(--white-color);
   padding: 6px 60px;
   transform: rotate(-45deg);
   font-size: 0.8rem;
@@ -396,7 +393,6 @@ h5 {
 }
 
 /* CTA */
-
 #cta {
   background: var(--gradient-1);
   background-size: 200% 200%;
@@ -421,7 +417,7 @@ h5 {
 .btn-gradient {
   background: linear-gradient(90deg, #7f00ff, #ff5a7d);
   border: none;
-  color: #fff
+  color: var(--white-color)
 }
 
 .btn-cta {
@@ -554,7 +550,7 @@ h5 {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: var(--white-color);
   font-size: 1rem;
   width: 100%;
   height: 100%
@@ -651,7 +647,7 @@ h5 {
 /* Footer */
 /* Footer */
 .site-footer {
-  padding: 5rem 0 1.5rem  0 ;
+  padding: 5rem 0 1.5rem 0;
   background: linear-gradient(180deg, #071026 0%, #091828 100%);
   color: var(--footer-color, #e6eefb)
 }
@@ -662,7 +658,7 @@ h5 {
 }
 
 .site-footer .footer-link:hover {
-  color: #fff;
+  color: var(--white-color);
   text-decoration: underline
 }
 
@@ -680,13 +676,13 @@ h5 {
 
 .site-footer .social-link:hover {
   background: linear-gradient(90deg, #7f00ff22, #ff5a7d22);
-  color: #fff
+  color: var(--white-color)
 }
 
 .site-footer .subscribe-form .form-control {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.06);
-  color: #fff
+  color: var(--white-color)
 }
 
 .site-footer .subscribe-form .form-control::placeholder {

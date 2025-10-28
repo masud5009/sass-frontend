@@ -2,21 +2,186 @@ section.inner-banner {
     padding: 70px 0px 52px 0px;
 }
 
-.pricing-section .pricing-tabs .nav-tabs {
-    border-bottom: unset;
+/* Pricing Section Styles */
+.pricing-section {
+    background: var(--bg-dark-grad);
+    padding: 5rem 0;
 }
 
-.pricing-section .pricing-tabs .pricing-tabs {
+/* Pricing Tabs */
+.pricing-tabs {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 3rem;
+}
+
+.pricing-section .pricing-tabs .nav-tabs {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 0.5rem;
+    border-radius: 12px;
+    gap: 0.5rem;
+}
+
+.pricing-section .pricing-tabs .nav-link {
+    color: var(--white-color);
+    background: transparent;
+    border: none;
+    border-radius: 8px !important;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.pricing-section .pricing-tabs .nav-link:hover:not(.active) {
+    background: rgba(255, 255, 255, 0.05);
 }
 
 .pricing-section .pricing-tabs .nav-link.active {
-    color: rebeccapurple;
+    background: var(--gradient-1);
+    color: var(--white-color);
+    box-shadow: 0 4px 12px rgba(127, 0, 255, 0.2);
+}
+
+/* Pricing Cards */
+.pricing-card {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02));
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 16px !important;
+    backdrop-filter: blur(10px);
+    padding: 2rem !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.pricing-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(255, 255, 255, 0.15) !important;
+    box-shadow: 0 22px 44px rgba(4, 8, 20, 0.4);
+}
+
+.pricing-card.popular {
+    position: relative;
+    border-color: #051026;
+    background-color: var(--primary-color);
+}
+
+.pricing-card.popular::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    border-radius: 16px;
+    padding: 1px;
+    background: var(--gradient-1);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.pricing-card.popular:hover::before {
+    opacity: 1;
+}
+
+.pricing-card .ribbon {
+    background: var(--gradient-1);
+    color: var(--white-color);
+    padding: 0.5rem 2rem;
+    position: absolute;
+    top: -79px;
+    right: -2rem;
+    transform: rotate(-34deg);
+    box-shadow: 0 2px 12px rgba(127, 0, 255, 0.2);
+    font-weight: 500;
+    font-size: 0.85rem;
+}
+
+.pricing-card h5.card-title {
+    color: var(--white-color);
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.price {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--white-color);
+    margin: 1.5rem 0;
+}
+
+.price .currency {
+    font-size: 1.5rem;
+    font-weight: 500;
+    vertical-align: super;
+    margin-right: 0.25rem;
+}
+
+.price small {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Feature Lists */
+.pricing-card ul.list-unstyled {
+    margin: 2rem 0;
+}
+
+.pricing-card ul.list-unstyled li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.pricing-card ul.list-unstyled li i {
+    width: 20px;
+    text-align: center;
+}
+
+.pricing-card ul.list-unstyled li i.fa-check {
+    color: #10b981;
+}
+
+.pricing-card ul.list-unstyled li i.fa-xmark {
+    color: #ef4444;
+}
+
+/* Buttons */
+.pricing-card .btn {
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+    border-radius: 12px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.pricing-card .btn-primary {
+    background: var(--gradient-1);
     border: none;
-    background: red;
-    outline: none;
-    color: #fff;
-    border-radius: 7px;
+    box-shadow: 0 4px 12px rgba(127, 0, 255, 0.2);
+}
+
+.pricing-card .btn-outline-primary {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: var(--white-color);
+}
+
+.pricing-card .btn-outline-primary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+@media (max-width: 991px) {
+    .pricing-card {
+        margin-bottom: 2rem;
+    }
+
+    .price {
+        font-size: 2.5rem;
+    }
 }
