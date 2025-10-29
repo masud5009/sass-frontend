@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Intelligent Business Idea / Grow Business Validator</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fonts: futuristic heading + modern body -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Orbitron:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- AOS for scroll animations -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <link href="assets/css/inner.css" rel="stylesheet">
+    <link href="assets/css/signup.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR (responsive, accessible) -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-3 sticky-top" id="siteNavbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Idea Validator</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+                    <!-- Dropdown: Products -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                            <li><a class="dropdown-item" href="login.html">Login</a></li>
+                            <li><a class="dropdown-item" href="signup.html">Sign Up</a></li>
+                            <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#demo">Templates</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Blog
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                            <li><a class="dropdown-item" href="blog.html">Posts</a></li>
+                            <li><a class="dropdown-item" href="blog-details.html">Post Details</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="inner-banner">
+        <div class="inner-banner-img"
+            style="background-image: url(https://carbaz.mamunuiux.com/uploads/website-images/breadcrumb-image-2024-04-25-06-10-19-8247.png)">
+        </div>
+        <div class="container">
+            <div class="col-lg-12">
+                <div class="inner-banner-df">
+                    <h1 class="inner-banner-taitel">Create Account</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Sign Up</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signup Section -->
+    <section class="signup-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="signup-card" data-aos="fade-up">
+                        <h2 class="signup-title">Create Your Account</h2>
+                        <p class="signup-subtitle">Join thousands of businesses using our platform</p>
+
+                        <!-- Social Signup -->
+                        <div class="social-signup">
+                            <button class="btn btn-social">
+                                <img src="https://www.google.com/images/branding/googleg/1x/googleg_standard_color_128dp.png"
+                                    alt="Google">
+                                Sign up with Google
+                            </button>
+                            <button class="btn btn-social">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png"
+                                    alt="Facebook">
+                                Sign up with Facebook
+                            </button>
+                        </div>
+
+                        <div class="signup-divider">
+                            <span>or continue with</span>
+                        </div>
+
+                        <!-- Signup Form -->
+                        <form id="signupForm">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label">First Name</label>
+                                        <input type="text" class="form-control" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Email Address</label>
+                                <input type="email" class="form-control" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">
+                                    Username
+                                    <span class="hint">This will be your subdomain</span>
+                                </label>
+                                <input type="text" class="form-control" id="username" required>
+                                <div class="subdomain-preview">
+                                    <i class="fas fa-globe preview-icon"></i>
+                                    <span class="preview-url">
+                                        <span class="subdomain">yourname</span>.ideavalidator.com
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password" required>
+                                <div class="password-requirements">
+                                    <div class="requirement-item" data-requirement="length">
+                                        <i class="fas fa-circle"></i>
+                                        At least 8 characters
+                                    </div>
+                                    <div class="requirement-item" data-requirement="uppercase">
+                                        <i class="fas fa-circle"></i>
+                                        One uppercase letter
+                                    </div>
+                                    <div class="requirement-item" data-requirement="lowercase">
+                                        <i class="fas fa-circle"></i>
+                                        One lowercase letter
+                                    </div>
+                                    <div class="requirement-item" data-requirement="number">
+                                        <i class="fas fa-circle"></i>
+                                        One number
+                                    </div>
+                                    <div class="requirement-item" data-requirement="special">
+                                        <i class="fas fa-circle"></i>
+                                        One special character
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Confirm Password</label>
+                                <input type="password" class="form-control" required>
+                            </div>
+
+                            <button type="submit" class="btn btn-signup">
+                                Create Account
+                            </button>
+                        </form>
+
+                        <div class="login-link">
+                            Already have an account? <a href="login.html">Log in</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts: jQuery, Bootstrap, AOS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Real-time subdomain preview
+            $('#username').on('input', function () {
+                const username = $(this).val().toLowerCase().replace(/[^a-z0-9]/g, '');
+                $('.subdomain').text(username || 'yourname');
+            });
+
+            // Password strength checker
+            $('#password').on('input', function () {
+                const password = $(this).val();
+
+                // Check requirements
+                const requirements = {
+                    length: password.length >= 8,
+                    uppercase: /[A-Z]/.test(password),
+                    lowercase: /[a-z]/.test(password),
+                    number: /[0-9]/.test(password),
+                    special: /[!@#$%^&*]/.test(password)
+                };
+
+                // Update requirement indicators
+                Object.keys(requirements).forEach(req => {
+                    const $requirement = $(`.requirement-item[data-requirement="${req}"]`);
+                    if (requirements[req]) {
+                        $requirement.addClass('valid').removeClass('invalid');
+                        $requirement.find('i').removeClass('fa-circle').addClass('fa-check');
+                    } else {
+                        $requirement.addClass('invalid').removeClass('valid');
+                        $requirement.find('i').removeClass('fa-check').addClass('fa-circle');
+                    }
+                });
+            });
+
+            // Form submission
+            $('#signupForm').on('submit', function (e) {
+                e.preventDefault();
+
+                const submitBtn = $(this).find('button[type="submit"]');
+                const originalText = submitBtn.html();
+
+                submitBtn.prop('disabled', true)
+                    .html('<i class="fas fa-spinner fa-spin me-2"></i>Creating Account...');
+
+                // Simulate API call
+                setTimeout(() => {
+                    submitBtn.prop('disabled', false).html(originalText);
+                    window.location.href = 'dashboard.html';
+                }, 2000);
+            });
+        });
+    </script>
+</body>
+
+</html>

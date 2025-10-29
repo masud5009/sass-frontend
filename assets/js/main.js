@@ -137,7 +137,111 @@ $(function () {
     $(this).closest('.feature-card').removeClass('focus');
   });
 
+  // Password visibility toggle
+  $('.password-toggle').on('click', function() {
+    const input = $(this).siblings('input'); // Changed to siblings to target direct input
+    const icon = $(this).find('i');
+    
+    if (input.attr('type') === 'password') {
+      input.attr('type', 'text');
+      icon.removeClass('fa-eye').addClass('fa-eye-slash');
+    } else {
+      input.attr('type', 'password');
+      icon.removeClass('fa-eye-slash').addClass('fa-eye');
+    }
+  });
+
+  // Login form submission
+  $('#loginForm').on('submit', function(e) {
+    e.preventDefault();
+    // Add your login logic here
+    
+    // Example animation feedback
+    const btn = $(this).find('button[type="submit"]');
+    const originalText = btn.html();
+    
+    btn.prop('disabled', true)
+       .html('<i class="fas fa-spinner fa-spin me-2"></i>Signing in...');
+    
+    // Simulate API call
+    setTimeout(() => {
+      btn.prop('disabled', false).html(originalText);
+      // Add your redirect or success handling here
+    }, 1500);
+  });
+
   // init bootstrap carousel with fade, autoplay and pause-on-hover for testimonials
   $('#testimonialCarousel').carousel({ interval: 6000, pause: 'hover', ride: 'carousel' });
+
+  // Contact form handling
+  $('#contactForm').on('submit', function(e) {
+    e.preventDefault();
+    
+    // Get form data
+    const formData = {
+      name: $('#nameInput').val(),
+      email: $('#emailInput').val(),
+      subject: $('#subjectInput').val(),
+      message: $('#messageInput').val()
+    };
+    
+    // Get submit button
+    const submitBtn = $(this).find('button[type="submit"]');
+    const originalText = submitBtn.html();
+    
+    // Show loading state
+    submitBtn.prop('disabled', true)
+           .html('<i class="fas fa-spinner fa-spin me-2"></i>Sending...');
+    
+    // Simulate API call - Replace this with your actual API call
+    setTimeout(() => {
+      // Reset form
+      this.reset();
+      
+      // Reset button
+      submitBtn.prop('disabled', false).html(originalText);
+      
+      // Show success message (you can customize this)
+      alert('Message sent successfully!');
+    }, 1500);
+  });
+
+  // Blog search functionality
+  $('.blog-search input').on('keyup', function() {
+    const searchTerm = $(this).val().toLowerCase();
+    
+    $('.blog-card').each(function() {
+      const title = $(this).find('h3').text().toLowerCase();
+      const content = $(this).find('p').text().toLowerCase();
+      
+      if (title.includes(searchTerm) || content.includes(searchTerm)) {
+        $(this).parent().fadeIn();
+      } else {
+        $(this).parent().fadeOut();
+      }
+    });
+  });
+
+  // Blog category filters
+  $('.category-filter').on('click', function() {
+    const category = $(this).text().toLowerCase();
+    
+    // Toggle active state
+    $('.category-filter').removeClass('active');
+    $(this).addClass('active');
+    
+    if (category === 'all') {
+      $('.blog-card').parent().fadeIn();
+    } else {
+      $('.blog-card').each(function() {
+        const cardCategory = $(this).data('category').toLowerCase();
+        if (cardCategory === category) {
+          $(this).parent().fadeIn();
+        } else {
+          $(this).parent().fadeOut();
+        }
+      });
+    }
+  });
 
 });

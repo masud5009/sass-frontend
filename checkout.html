@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Intelligent Business Idea / Grow Business Validator</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fonts: futuristic heading + modern body -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Orbitron:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- AOS for scroll animations -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <link href="assets/css/inner.css" rel="stylesheet">
+    <link href="assets/css/checkout.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR (responsive, accessible) -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-3 sticky-top" id="siteNavbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Idea Validator</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+                    <!-- Dropdown: Products -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                            <li><a class="dropdown-item" href="login.html">Login</a></li>
+                            <li><a class="dropdown-item" href="signup.html">Sign Up</a></li>
+                            <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#demo">Templates</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Blog
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                            <li><a class="dropdown-item" href="blog.html">Posts</a></li>
+                            <li><a class="dropdown-item" href="blog-details.html">Post Details</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="inner-banner">
+        <div class="inner-banner-img"
+            style="background-image: url(https://carbaz.mamunuiux.com/uploads/website-images/breadcrumb-image-2024-04-25-06-10-19-8247.png)">
+        </div>
+        <div class="container">
+            <div class="col-lg-12">
+                <div class="inner-banner-df">
+                    <h1 class="inner-banner-taitel">Checkout</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="pricing.html">Pricing</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Checkout</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Checkout Section -->
+    <section class="checkout-section">
+        <div class="container">
+            <div class="row">
+                <!-- Billing Details -->
+                <div class="col-lg-8" data-aos="fade-up">
+                    <div class="checkout-card">
+                        <h2 class="checkout-title">Billing Details</h2>
+                        <form id="checkoutForm">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label">First Name</label>
+                                        <input type="text" class="form-control" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Email Address</label>
+                                <input type="email" class="form-control" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Company Name (Optional)</label>
+                                <input type="text" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Country</label>
+                                <select class="form-control" required>
+                                    <option value="">Select Country</option>
+                                    <option value="US">United States</option>
+                                    <option value="UK">United Kingdom</option>
+                                    <option value="CA">Canada</option>
+                                    <option value="AU">Australia</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Payment Details -->
+                    <div class="checkout-card">
+                        <h2 class="checkout-title">Payment Method</h2>
+                        
+                        <!-- Payment Categories -->
+                        <div class="payment-categories">
+                            <div class="payment-category active" data-category="all">All Methods</div>
+                            <div class="payment-category" data-category="cards">Cards</div>
+                            <div class="payment-category" data-category="wallet">E-Wallets</div>
+                            <div class="payment-category" data-category="crypto">Cryptocurrency</div>
+                            <div class="payment-category" data-category="bank">Bank Transfer</div>
+                        </div>
+
+                        <!-- Payment Methods Grid -->
+                        <div class="payment-methods">
+                            <!-- Credit Cards -->
+                            <div class="payment-method active" data-type="cards">
+                                <img src="https://logos-world.net/wp-content/uploads/2020/09/Mastercard-Logo.png" alt="Mastercard">
+                                <span>Mastercard</span>
+                            </div>
+                            <div class="payment-method" data-type="cards">
+                                <img src="https://logos-world.net/wp-content/uploads/2020/04/Visa-Logo.png" alt="Visa">
+                                <span>Visa</span>
+                            </div>
+                            <div class="payment-method" data-type="cards">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/American_Express_logo_%282018%29.svg/1200px-American_Express_logo_%282018%29.svg.png" alt="American Express">
+                                <span>American Express</span>
+                            </div>
+
+                            <!-- E-Wallets -->
+                            <div class="payment-method" data-type="wallet">
+                                <img src="https://logos-world.net/wp-content/uploads/2020/07/PayPal-Logo.png" alt="PayPal">
+                                <span>PayPal</span>
+                            </div>
+                            <div class="payment-method" data-type="wallet">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Skrill_logo.png" alt="Skrill">
+                                <span>Skrill</span>
+                            </div>
+                            <div class="payment-method" data-type="wallet">
+                                <img src="https://logos-world.net/wp-content/uploads/2020/11/Google-Pay-Logo.png" alt="Google Pay">
+                                <span>Google Pay</span>
+                            </div>
+                            <div class="payment-method" data-type="wallet">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Apple_Pay_logo.svg/2560px-Apple_Pay_logo.svg.png" alt="Apple Pay">
+                                <span>Apple Pay</span>
+                            </div>
+
+                            <!-- Cryptocurrency -->
+                            <div class="payment-method" data-type="crypto">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1200px-Bitcoin.svg.png" alt="Bitcoin">
+                                <span>Bitcoin</span>
+                            </div>
+                            <div class="payment-method" data-type="crypto">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Ethereum_logo_2014.svg/628px-Ethereum_logo_2014.svg.png" alt="Ethereum">
+                                <span>Ethereum</span>
+                            </div>
+                            <div class="payment-method" data-type="crypto">
+                                <img src="https://cryptologos.cc/logos/binance-usd-busd-logo.png" alt="BUSD">
+                                <span>BUSD</span>
+                            </div>
+
+                            <!-- Bank Transfers -->
+                            <div class="payment-method" data-type="bank">
+                                <img src="https://companieslogo.com/img/orig/WFC_BIG-99128c11.png?t=1633497370" alt="Wire Transfer">
+                                <span>Wire Transfer</span>
+                            </div>
+                            <div class="payment-method" data-type="bank">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Stripe_Logo%2C_revised_2016.svg/2560px-Stripe_Logo%2C_revised_2016.svg.png" alt="Bank Card">
+                                <span>Bank Card</span>
+                            </div>
+                            <div class="payment-method" data-type="bank">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Zelle_logo.svg/2560px-Zelle_logo.svg.png" alt="Zelle">
+                                <span>Zelle</span>
+                            </div>
+                        </div>
+
+                        <div class="card-element">
+                            <div class="form-group">
+                                <label class="form-label">Card Number</label>
+                                <input type="text" class="form-control" placeholder="1234 5678 9012 3456" required>
+                            </div>
+
+                            <div class="card-row">
+                                <div class="form-group">
+                                    <label class="form-label">Cardholder Name</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Expiry Date</label>
+                                    <input type="text" class="form-control" placeholder="MM/YY" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">CVV</label>
+                                    <input type="text" class="form-control" placeholder="123" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="checkout-card order-summary">
+                        <h2 class="checkout-title">Order Summary</h2>
+                        <div class="plan-details">
+                            <h3 class="plan-name">Professional Plan</h3>
+                            <div class="plan-price">
+                                $49.99 <small>/month</small>
+                            </div>
+                            <ul class="plan-features">
+                                <li><i class="fas fa-check"></i> Advanced Idea Validation</li>
+                                <li><i class="fas fa-check"></i> Market Analysis Tools</li>
+                                <li><i class="fas fa-check"></i> Competitor Research</li>
+                                <li><i class="fas fa-check"></i> 24/7 Priority Support</li>
+                            </ul>
+                        </div>
+
+                        <div class="price-breakdown">
+                            <div class="price-row">
+                                <span>Subtotal</span>
+                                <span>$49.99</span>
+                            </div>
+                            <div class="price-row">
+                                <span>Tax</span>
+                                <span>$5.00</span>
+                            </div>
+                            <div class="price-row total">
+                                <span>Total</span>
+                                <span>$54.99</span>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-checkout" id="submitCheckout">
+                            <i class="fas fa-lock me-2"></i>Complete Purchase
+                        </button>
+
+                        <div class="secure-badge">
+                            <i class="fas fa-shield-alt"></i>
+                            Secure Checkout - 256-bit SSL Encryption
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts: jQuery, Bootstrap, AOS, Chart.js, CountUp.js -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/countup.js@2.0.8/dist/countUp.umd.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Payment category filtering
+            $('.payment-category').on('click', function() {
+                $('.payment-category').removeClass('active');
+                $(this).addClass('active');
+                
+                const category = $(this).data('category');
+                
+                if (category === 'all') {
+                    $('.payment-method').fadeIn();
+                } else {
+                    $('.payment-method').each(function() {
+                        if ($(this).data('type') === category) {
+                            $(this).fadeIn();
+                        } else {
+                            $(this).fadeOut();
+                        }
+                    });
+                }
+            });
+
+            // Payment method selection
+            $('.payment-method').on('click', function() {
+                $('.payment-method').removeClass('active');
+                $(this).addClass('active');
+                
+                // Show appropriate form based on payment method
+                const type = $(this).data('type');
+                if (type === 'cards') {
+                    $('.card-element').fadeIn();
+                } else {
+                    $('.card-element').fadeOut();
+                }
+            });
+
+            // Form submission
+            $('#checkoutForm').on('submit', function(e) {
+                e.preventDefault();
+                const submitBtn = $('#submitCheckout');
+                const originalText = submitBtn.html();
+
+                submitBtn.prop('disabled', true)
+                    .html('<i class="fas fa-spinner fa-spin me-2"></i>Processing...');
+
+                // Simulate payment processing
+                setTimeout(() => {
+                    submitBtn.prop('disabled', false).html(originalText);
+                    // Show success message or redirect to success page
+                    window.location.href = 'thank-you.html';
+                }, 2000);
+            });
+
+            // Card number formatting
+            $('input[placeholder="1234 5678 9012 3456"]').on('input', function() {
+                let value = $(this).val().replace(/\s+/g, '').replace(/[^0-9]/gi, '');
+                let formattedValue = value.match(/.{1,4}/g)?.join(' ') || value;
+                $(this).val(formattedValue);
+            });
+
+            // Expiry date formatting
+            $('input[placeholder="MM/YY"]').on('input', function() {
+                let value = $(this).val().replace(/\s+/g, '').replace(/[^0-9]/gi, '');
+                if (value.length >= 2) {
+                    value = value.substring(0, 2) + '/' + value.substring(2, 4);
+                }
+                $(this).val(value);
+            });
+
+            // CVV max length
+            $('input[placeholder="123"]').on('input', function() {
+                if ($(this).val().length > 3) {
+                    $(this).val($(this).val().slice(0, 3));
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

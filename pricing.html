@@ -33,10 +33,38 @@
             </button>
             <div class="collapse navbar-collapse" id="navMenu">
                 <ul class="navbar-nav ms-auto align-items-lg-center">
-                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+                    <!-- Dropdown: Products -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                            <li><a class="dropdown-item" href="login.html">Login</a></li>
+                            <li><a class="dropdown-item" href="signup.html">Sign Up</a></li>
+                            <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#demo">Templates</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Blog
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                            <li><a class="dropdown-item" href="blog.html">Posts</a></li>
+                            <li><a class="dropdown-item" href="blog-details.html">Post Details</a></li>
+                        </ul>
+                    </li>
+
                     <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#cta">Get Started</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -49,12 +77,12 @@
         <div class="container">
             <div class="col-lg-12">
                 <div class="inner-banner-df">
-                    <h1 class="inner-banner-taitel">About Us</h1>
+                    <h1 class="inner-banner-taitel">Pricing</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="https://carbaz.mamunuiux.com">Home</a>
                             </li>
-                            <li class="breadcrumb-item active" aria-current="page">About Us</li>
+                            <li class="breadcrumb-item active" aria-current="page">Pricing</li>
                         </ol>
                     </nav>
                 </div>
@@ -63,7 +91,7 @@
     </section>
 
     <!-- PRICING -->
-    <section id="pricing" class="pricing-section">
+    <section id="pricing" class="pricing-section mt-5 pt-5 mb-5 pb-5">
         <div class="container">
 
             <div class="text-center mb-4" data-aos="fade-up">
@@ -80,181 +108,238 @@
             </div>
 
             <div class="tab-content" id="nav-tabContent">
+
+                <!-- ================= Monthly Plans ================= -->
                 <div class="tab-pane fade" id="monthly" role="tabpanel" aria-labelledby="monthly-tab">
                     <div class="row g-4">
+
+                        <!-- Starter -->
                         <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="50">
                             <div class="card h-100 pricing-card">
                                 <div class="card-body text-center p-4">
                                     <h5 class="card-title">Starter</h5>
-                                    <div class="price my-3"><span class="currency">$</span><span class="amount"
-                                            data-monthly="29" data-yearly="23">29</span><small
-                                            class="text-white">/month</small>
+                                    <div class="price my-3">
+                                        <span class="currency">$</span><span class="amount">29</span>
+                                        <small class="text-white">/month</small>
                                     </div>
-                                    <p class="text-white">For solo founders validating early ideas.</p>
                                     <ul class="list-unstyled mt-3 mb-4 text-start">
-                                        <li><i class="fas fa-check"></i> Available feature</li>
-                                        <li><i class="fas fa-xmark"></i> Unavailable feature</li>
+                                        <li><i class="fas fa-check"></i> 5 Projects</li>
+                                        <li><i class="fas fa-check"></i> Basic Analytics</li>
+                                        <li><i class="fas fa-check"></i> Email Support</li>
+                                        <li><i class="fas fa-check"></i> Access to Community Forum</li>
+                                        <li><i class="fas fa-xmark"></i> Team Collaboration</li>
+                                        <li><i class="fas fa-xmark"></i> API Access</li>
+                                        <li><i class="fas fa-xmark"></i> Priority Support</li>
                                     </ul>
                                     <a href="#" class="btn btn-outline-primary">Choose Starter</a>
                                 </div>
                             </div>
                         </div>
 
+                        <!-- Growth -->
                         <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="80">
                             <div class="card h-100 pricing-card popular">
                                 <div class="ribbon">Most popular</div>
                                 <div class="card-body text-center p-4">
                                     <h5 class="card-title">Growth</h5>
-                                    <div class="price my-3"><span class="currency">$</span><span class="amount"
-                                            data-monthly="79" data-yearly="63">79</span><small
-                                            class="text-white">/month</small>
+                                    <div class="price my-3">
+                                        <span class="currency">$</span><span class="amount">79</span>
+                                        <small class="text-white">/month</small>
                                     </div>
-                                    <p class="text-white">For scaling startups and small teams.</p>
                                     <ul class="list-unstyled mt-3 mb-4 text-start">
-                                   <li><i class="fas fa-check"></i> Available feature</li>
-        <li><i class="fas fa-xmark"></i> Unavailable feature</li>
+                                        <li><i class="fas fa-check"></i> 20 Projects</li>
+                                        <li><i class="fas fa-check"></i> Advanced Analytics</li>
+                                        <li><i class="fas fa-check"></i> Team Collaboration</li>
+                                        <li><i class="fas fa-check"></i> API Access</li>
+                                        <li><i class="fas fa-check"></i> Email + Chat Support</li>
+                                        <li><i class="fas fa-check"></i> Custom Integrations</li>
+                                        <li><i class="fas fa-xmark"></i> Dedicated Account Manager</li>
                                     </ul>
                                     <a href="#" class="btn btn-primary">Choose Growth</a>
                                 </div>
                             </div>
                         </div>
 
+                        <!-- Enterprise -->
                         <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="110">
                             <div class="card h-100 pricing-card">
                                 <div class="card-body text-center p-4">
                                     <h5 class="card-title">Enterprise</h5>
-                                    <div class="price my-3"><span class="currency">$</span><span class="amount"
-                                            data-monthly="199" data-yearly="159">199</span><small
-                                            class="text-white">/month</small>
+                                    <div class="price my-3">
+                                        <span class="currency">$</span><span class="amount">199</span>
+                                        <small class="text-white">/month</small>
                                     </div>
-                                    <p class="text-white">For large teams, custom integrations and SLA.</p>
                                     <ul class="list-unstyled mt-3 mb-4 text-start">
-                                       <li><i class="fas fa-check"></i> Available feature</li>
-        <li><i class="fas fa-xmark"></i> Unavailable feature</li>
+                                        <li><i class="fas fa-check"></i> Unlimited Projects</li>
+                                        <li><i class="fas fa-check"></i> Enterprise-grade Security</li>
+                                        <li><i class="fas fa-check"></i> API & Developer Tools</li>
+                                        <li><i class="fas fa-check"></i> 24/7 Priority Support</li>
+                                        <li><i class="fas fa-check"></i> Dedicated Account Manager</li>
+                                        <li><i class="fas fa-check"></i> Custom Reports & Analytics</li>
+                                        <li><i class="fas fa-check"></i> White-label Branding</li>
                                     </ul>
                                     <a href="#" class="btn btn-outline-primary">Contact Sales</a>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
+
+                <!-- ================= Yearly Plans ================= -->
                 <div class="tab-pane fade show active" id="yearly" role="tabpanel" aria-labelledby="yearly-tab">
                     <div class="row g-4">
+
+                        <!-- Starter -->
                         <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="50">
                             <div class="card h-100 pricing-card">
                                 <div class="card-body text-center p-4">
                                     <h5 class="card-title">Starter</h5>
-                                    <div class="price my-3"><span class="currency">$</span><span class="amount"
-                                            data-monthly="29" data-yearly="23">29</span><small
-                                            class="text-white">/year</small>
+                                    <div class="price my-3">
+                                        <span class="currency">$</span><span class="amount">23</span>
+                                        <small class="text-white">/year</small>
                                     </div>
-                                    <p class="text-white">For solo founders validating early ideas.</p>
                                     <ul class="list-unstyled mt-3 mb-4 text-start">
-                                     <li><i class="fas fa-check"></i> Available feature</li>
-        <li><i class="fas fa-xmark"></i> Unavailable feature</li>
+                                        <li><i class="fas fa-check"></i> 10 Projects</li>
+                                        <li><i class="fas fa-check"></i> Basic Analytics</li>
+                                        <li><i class="fas fa-check"></i> Email Support</li>
+                                        <li><i class="fas fa-check"></i> Community Access</li>
+                                        <li><i class="fas fa-xmark"></i> API Access</li>
+                                        <li><i class="fas fa-xmark"></i> Custom Branding</li>
+                                        <li><i class="fas fa-xmark"></i> Priority Support</li>
                                     </ul>
                                     <a href="#" class="btn btn-outline-primary">Choose Starter</a>
                                 </div>
                             </div>
                         </div>
 
+                        <!-- Growth -->
                         <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="80">
                             <div class="card h-100 pricing-card popular">
                                 <div class="ribbon">Most popular</div>
                                 <div class="card-body text-center p-4">
                                     <h5 class="card-title">Growth</h5>
-                                    <div class="price my-3"><span class="currency">$</span><span class="amount"
-                                            data-monthly="79" data-yearly="63">79</span><small
-                                            class="text-white">/year</small>
+                                    <div class="price my-3">
+                                        <span class="currency">$</span><span class="amount">63</span>
+                                        <small class="text-white">/year</small>
                                     </div>
-                                    <p class="text-white">For scaling startups and small teams.</p>
                                     <ul class="list-unstyled mt-3 mb-4 text-start">
-                                       <li><i class="fas fa-check"></i> Available feature</li>
-        <li><i class="fas fa-xmark"></i> Unavailable feature</li>
+                                        <li><i class="fas fa-check"></i> 50 Projects</li>
+                                        <li><i class="fas fa-check"></i> Advanced Analytics</li>
+                                        <li><i class="fas fa-check"></i> Team Collaboration</li>
+                                        <li><i class="fas fa-check"></i> API Access</li>
+                                        <li><i class="fas fa-check"></i> Email + Chat Support</li>
+                                        <li><i class="fas fa-check"></i> Integration with 3rd-party Tools</li>
+                                        <li><i class="fas fa-xmark"></i> Dedicated Manager</li>
                                     </ul>
                                     <a href="#" class="btn btn-primary">Choose Growth</a>
                                 </div>
                             </div>
                         </div>
 
+                        <!-- Enterprise -->
                         <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="110">
                             <div class="card h-100 pricing-card">
                                 <div class="card-body text-center p-4">
                                     <h5 class="card-title">Enterprise</h5>
-                                    <div class="price my-3"><span class="currency">$</span><span class="amount"
-                                            data-monthly="199" data-yearly="159">199</span><small
-                                            class="text-white">/year</small>
+                                    <div class="price my-3">
+                                        <span class="currency">$</span><span class="amount">159</span>
+                                        <small class="text-white">/year</small>
                                     </div>
-                                    <p class="text-white">For large teams, custom integrations and SLA.</p>
                                     <ul class="list-unstyled mt-3 mb-4 text-start">
-                                     <li><i class="fas fa-check"></i> Available feature</li>
-        <li><i class="fas fa-xmark"></i> Unavailable feature</li>
+                                        <li><i class="fas fa-check"></i> Unlimited Projects</li>
+                                        <li><i class="fas fa-check"></i> Enterprise-grade Security</li>
+                                        <li><i class="fas fa-check"></i> API & Developer Tools</li>
+                                        <li><i class="fas fa-check"></i> 24/7 Priority Support</li>
+                                        <li><i class="fas fa-check"></i> Custom Reports & Dashboards</li>
+                                        <li><i class="fas fa-check"></i> Dedicated Account Manager</li>
+                                        <li><i class="fas fa-check"></i> White-label Branding</li>
                                     </ul>
                                     <a href="#" class="btn btn-outline-primary">Contact Sales</a>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
+
+                <!-- ================= Lifetime Plans ================= -->
                 <div class="tab-pane fade" id="lifetime" role="tabpanel" aria-labelledby="lifetime-tab">
                     <div class="row g-4">
+
+                        <!-- Starter -->
                         <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="50">
                             <div class="card h-100 pricing-card">
                                 <div class="card-body text-center p-4">
                                     <h5 class="card-title">Starter</h5>
-                                    <div class="price my-3"><span class="currency">$</span><span class="amount"
-                                            data-monthly="29" data-yearly="23">29</span>
+                                    <div class="price my-3">
+                                        <span class="currency">$</span><span class="amount">99</span>
                                     </div>
-                                    <p class="text-white">For solo founders validating early ideas.</p>
                                     <ul class="list-unstyled mt-3 mb-4 text-start">
-                                    <li><i class="fas fa-check"></i> Available feature</li>
-        <li><i class="fas fa-xmark"></i> Unavailable feature</li>
+                                        <li><i class="fas fa-check"></i> Lifetime Access</li>
+                                        <li><i class="fas fa-check"></i> All Basic Features</li>
+                                        <li><i class="fas fa-check"></i> Free Updates</li>
+                                        <li><i class="fas fa-xmark"></i> Team Access</li>
+                                        <li><i class="fas fa-xmark"></i> API Access</li>
+                                        <li><i class="fas fa-xmark"></i> Advanced Analytics</li>
+                                        <li><i class="fas fa-xmark"></i> Priority Support</li>
                                     </ul>
                                     <a href="#" class="btn btn-outline-primary">Choose Starter</a>
                                 </div>
                             </div>
                         </div>
 
+                        <!-- Growth -->
                         <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="80">
                             <div class="card h-100 pricing-card popular">
                                 <div class="ribbon">Most popular</div>
                                 <div class="card-body text-center p-4">
                                     <h5 class="card-title">Growth</h5>
-                                    <div class="price my-3"><span class="currency">$</span><span class="amount"
-                                            data-monthly="79" data-yearly="63">79</span>
+                                    <div class="price my-3">
+                                        <span class="currency">$</span><span class="amount">199</span>
                                     </div>
-                                    <p class="text-white">For scaling startups and small teams.</p>
                                     <ul class="list-unstyled mt-3 mb-4 text-start">
-                                    <li><i class="fas fa-check"></i> Available feature</li>
-        <li><i class="fas fa-xmark"></i> Unavailable feature</li>
+                                        <li><i class="fas fa-check"></i> Lifetime Access</li>
+                                        <li><i class="fas fa-check"></i> Advanced Analytics</li>
+                                        <li><i class="fas fa-check"></i> Team Collaboration</li>
+                                        <li><i class="fas fa-check"></i> API Access</li>
+                                        <li><i class="fas fa-check"></i> Lifetime Updates</li>
+                                        <li><i class="fas fa-check"></i> Priority Email Support</li>
+                                        <li><i class="fas fa-xmark"></i> White-label Branding</li>
                                     </ul>
                                     <a href="#" class="btn btn-primary">Choose Growth</a>
                                 </div>
                             </div>
                         </div>
 
+                        <!-- Enterprise -->
                         <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="110">
                             <div class="card h-100 pricing-card">
                                 <div class="card-body text-center p-4">
                                     <h5 class="card-title">Enterprise</h5>
-                                    <div class="price my-3"><span class="currency">$</span><span class="amount"
-                                            data-monthly="199" data-yearly="159">199</span>
+                                    <div class="price my-3">
+                                        <span class="currency">$</span><span class="amount">399</span>
                                     </div>
-                                    <p class="text-white">For large teams, custom integrations and SLA.</p>
                                     <ul class="list-unstyled mt-3 mb-4 text-start">
-                                  <li><i class="fas fa-check"></i> Available feature</li>
-        <li><i class="fas fa-xmark"></i> Unavailable feature</li>
+                                        <li><i class="fas fa-check"></i> Lifetime Access</li>
+                                        <li><i class="fas fa-check"></i> Unlimited Projects</li>
+                                        <li><i class="fas fa-check"></i> All Future Updates</li>
+                                        <li><i class="fas fa-check"></i> Dedicated Account Manager</li>
+                                        <li><i class="fas fa-check"></i> 24/7 Priority Support</li>
+                                        <li><i class="fas fa-check"></i> White-label Branding</li>
+                                        <li><i class="fas fa-check"></i> Custom Integration</li>
                                     </ul>
                                     <a href="#" class="btn btn-outline-primary">Contact Sales</a>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
-
 
     <!-- FOOTER -->
     <footer class="site-footer section-base">
