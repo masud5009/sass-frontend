@@ -113,6 +113,199 @@
     }
 }
 
-.inner-banner-taitel{
+.inner-banner-taitel {
     color: var(--white-color);
+}
+
+/* Blog Section Styles */
+.blog-section {
+    position: relative;
+    padding: 4rem 0;
+}
+
+.blog-section .blog-filters {
+    margin-bottom: 3rem;
+}
+
+.blog-section .blog-filters .blog-search {
+    position: relative;
+    max-width: 400px;
+    margin-bottom: 2rem;
+}
+
+.blog-section .blog-filters .blog-search .form-control {
+    border: 1px solid var(--border-color);
+    color: var(--dark-color);
+    border-radius: 12px;
+    padding: 0.8rem 1rem 0.8rem 3rem;
+    font-size: 0.95rem;
+}
+
+.blog-section .blog-filters .blog-search .form-control:focus {
+    border: 1px solid var(--primary-color);
+    box-shadow: unset !important;
+}
+
+.blog-section .blog-filters .blog-search .search-icon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--primary-color)
+}
+
+.blog-section .blog-filters .category-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.blog-section .blog-filters .category-filter {
+    border: 1px solid var(--border-color);
+    color: var(--primary-color);
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.blog-section .blog-filters .category-filter:hover,
+.blog-section .blog-filters .category-filter.active {
+    background: var(--primary-color);
+    border-color: transparent;
+    color: var(--white-color);
+}
+
+.blog-section .blog-card {
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.blog-section .blog-card:hover {
+    transform: translateY(-5px);
+    background: var(--light-color);
+    border-color: rgba(255, 255, 255, 0.12);
+}
+
+.blog-section .blog-card .card-img-wrapper {
+    position: relative;
+    padding-top: 60%;
+    overflow: hidden;
+}
+
+.blog-section .blog-card .card-img-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.blog-section .blog-card:hover .card-img-wrapper img {
+    transform: scale(1.1);
+}
+
+.blog-section .blog-card .card-body {
+    padding: 1.5rem;
+}
+
+.blog-section .blog-card .blog-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+    color: var(--primary-color)
+}
+
+.blog-section .blog-card .blog-meta span {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.blog-section .blog-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+    color: var(--dark-color);
+    font-weight: 600;
+}
+
+.blog-section .blog-card:hover h3 {
+    color: var(--primary-color);
+}
+
+.blog-section .blog-card p {
+    color: var(--dark-color);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.blog-section .blog-card .read-more {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: opacity 0.2s ease;
+}
+
+.blog-section .blog-card .read-more:hover {
+    opacity: 0.8;
+}
+
+.blog-section .blog-pagination {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.blog-section .page-link {
+    border: 1px solid var(--border-color);
+    color: var(--primary-color);
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.blog-section .page-link:hover,
+.blog-section .page-link.active {
+    background: var(--primary-color);
+    border-color: transparent;
+    color: var(--white-color);
+}
+
+@media (max-width: 991px) {
+    .blog-section .blog-filters {
+        margin-bottom: 2rem;
+    }
+
+    .blog-section .blog-card {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .blog-section .category-filters {
+        gap: 0.4rem;
+    }
+
+    .blog-section .category-filter {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.85rem;
+    }
 }
