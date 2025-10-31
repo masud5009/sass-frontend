@@ -7,6 +7,10 @@ $(function () {
     disable: function () { return window.innerWidth < 768; }
   });
 
+
+  $('.nice-select').niceSelect();
+
+
   // Smooth scroll for anchor links
   $('a[href^="#"]').on('click', function (e) {
     var target = $(this.getAttribute('href'));

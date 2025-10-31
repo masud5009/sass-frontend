@@ -26,8 +26,9 @@ body {
   background: #fff;
   color: var(--primary-color);
 }
-a{
-  text-decoration:  none;
+
+a {
+  text-decoration: none;
   color: var(--dark-color);
 }
 
@@ -45,29 +46,57 @@ h5 {
   letter-spacing: 0.6px
 }
 
-/* Navbar styling*/
-.navbar .navbar-brand {
-  color: var(--primary-color);
-  font-weight: 700;
-  letter-spacing: 0.6px
+/* Make navbar sticky and center items */
+#siteNavbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: var(--white-color);
+  transition: all 0.3s ease;
+}
+
+.navbar .account-btn {
+  border: 1px solid var(--primary-color) !important;
+  color: var(--primary-color) !important;
+}
+.navbar .account-btn:hover {
+  background-color: var(--primary-color) !important;
+  color: var(--white-color) !important;
+}
+
+.navbar-nav {
+  justify-content: center;
+}
+
+.navbar-nav .nav-item {
+  margin-left: 15px;
+}
+
+.language-selector {
+  margin-left: auto;
 }
 
 .navbar .nav-link {
   color: var(--dark-color) !important;
+  font-size: 16px;
 }
 
 .navbar .nav-link:hover {
   color: var(--primary-color) !important;
 }
 
-.navbar-toggler {
-  border-color: rgba(255, 255, 255, 0.08)
+.navbar-toggler span{
+  background-color: var(--primary-color) !important;
+  color: var(--white-color) !important;
 }
 
 #siteNavbar.navbar-scrolled {
   box-shadow: 0 8px 28px rgba(2, 6, 23, 0.48);
   backdrop-filter: blur(6px)
 }
+
 @media (hover: hover) and (pointer: fine) {
   .navbar .dropdown .dropdown-menu {
     display: block;
@@ -103,7 +132,7 @@ h5 {
 }
 
 .navbar .dropdown-item {
-  color:var(--dark-color);
+  color: var(--dark-color);
   padding: 0.55rem 1rem;
   transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease;
 }
@@ -137,7 +166,7 @@ h5 {
   display: flex;
   align-items: center;
   padding: 7rem 0 5rem 0;
-  height: 85vh;
+  height: 95vh;
   background-color: var(--light-color);
 }
 
@@ -887,10 +916,6 @@ h5 {
 
 /* tweak footer stacking on small screens */
 @media (max-width:767px) {
-  footer .row>div {
-    text-align: center
-  }
-
   .testimonial-section .testimonial-card {
     box-shadow: 0 8px 20px rgba(4, 8, 20, 0.28)
   }
@@ -922,11 +947,24 @@ h5 {
 }
 
 /* Footer */
-/* Footer */
 .site-footer {
   padding: 5rem 0 1.5rem 0;
   background: linear-gradient(180deg, #071026 0%, #091828 100%);
   color: var(--footer-color, #e6eefb)
+}
+
+.site-footer .links-title,
+.site-footer .contact-title {
+  font-size: 22px;
+}
+
+.site-footer .email a,
+.site-footer .number a {
+  color: var(--white-color);
+}
+
+.site-footer li {
+  padding: 5px 0px;
 }
 
 .site-footer .footer-link {
@@ -952,23 +990,8 @@ h5 {
 }
 
 .site-footer .social-link:hover {
-  background: linear-gradient(90deg, #7f00ff22, #ff5a7d22);
+  background: var(--primary-gradient);
   color: var(--white-color)
-}
-
-.site-footer .subscribe-form .form-control {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  color: var(--white-color)
-}
-
-.site-footer .subscribe-form .form-control::placeholder {
-  color: rgba(230, 238, 251, 0.5)
-}
-
-.site-footer .subscribe-form .btn-glass {
-  padding: .45rem .9rem;
-  font-size: .95rem
 }
 
 .site-footer .navbar-brand {
@@ -976,7 +999,7 @@ h5 {
 }
 
 .site-footer .border-white-10 {
-  border-color: rgba(255, 255, 255, 0.06) !important
+  border-color: var(--border-color);
 }
 
 footer a {
@@ -1122,7 +1145,7 @@ footer a {
 .auth-form .form-floating>.form-control:focus~label,
 .auth-form .form-floating>.form-control:not(:placeholder-shown)~label {
   transform: scale(0.85) translateY(-0.75rem);
-  color:var(--dark-color)
+  color: var(--dark-color)
 }
 
 .auth-form .password-toggle {
@@ -1399,7 +1422,7 @@ footer a {
 
 /** breadcrum */
 .inner-banner {
-  padding: 70px 0px 52px 0px;
+  padding: 126px 0px 52px 0px;
   background: var(--primary-color) !important;
 }
 

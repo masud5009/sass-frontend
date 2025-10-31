@@ -16,19 +16,21 @@
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <!-- Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Niceslect-->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
     <!-- Custom styles -->
     <link href="assets/css/styles.css" rel="stylesheet">
     <link href="assets/css/inner.css" rel="stylesheet">
-    <link href="assets/css/contact.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/faq.css">
 </head>
 
 <body>
 
-    <!-- NAVBAR (responsive, accessible) -->
-    <nav class="navbar navbar-expand-lg navbar-dark py-3 sticky-top" id="siteNavbar">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-2 sticky-top" id="siteNavbar">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">Idea Validator</a>
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img src="assets/images/logo.png" alt="" height="40">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
                 aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -68,6 +70,22 @@
                     <li class="nav-item"><a class="nav-link" href="faq.html">FAQs</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
+                <div class="language px-3">
+                    <select class="nice-select">
+                        <option value="">English</option>
+                        <option value="">Bangla</option>
+                    </select>
+                </div>
+                <div class="dropdown px-3">
+                    <button class="btn account-btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Account
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="login.html">Login</a>
+                        <a class="dropdown-item" href="signup.html">Signup</a>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -120,7 +138,10 @@
                     </h2>
                     <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                            Idea Validator is an AI-powered platform designed to help entrepreneurs and businesses evaluate and validate their business ideas. It uses advanced algorithms to analyze market trends, competition, and potential risks, providing you with data-driven insights to make informed decisions about your business venture.
+                            Idea Validator is an AI-powered platform designed to help entrepreneurs and businesses
+                            evaluate and validate their business ideas. It uses advanced algorithms to analyze market
+                            trends, competition, and potential risks, providing you with data-driven insights to make
+                            informed decisions about your business venture.
                         </div>
                     </div>
                 </div>
@@ -128,13 +149,17 @@
                 <!-- Features -->
                 <div class="accordion-item" data-category="features">
                     <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq2">
                             What key features does Idea Validator offer?
                         </button>
                     </h2>
                     <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                            Our platform offers several key features including market analysis, competitor research, risk assessment, financial projections, and actionable recommendations. You'll also get access to industry reports, trend analysis, and AI-driven insights to help validate and refine your business idea.
+                            Our platform offers several key features including market analysis, competitor research,
+                            risk assessment, financial projections, and actionable recommendations. You'll also get
+                            access to industry reports, trend analysis, and AI-driven insights to help validate and
+                            refine your business idea.
                         </div>
                     </div>
                 </div>
@@ -142,13 +167,17 @@
                 <!-- Pricing -->
                 <div class="accordion-item" data-category="pricing">
                     <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq3">
                             What are your pricing plans and what's included?
                         </button>
                     </h2>
                     <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                            We offer flexible pricing plans starting from $29/month for startups to enterprise solutions for larger organizations. Each plan includes different levels of analysis depth, report frequency, and consultation services. Check our pricing page for detailed information about each plan's features.
+                            We offer flexible pricing plans starting from $29/month for startups to enterprise solutions
+                            for larger organizations. Each plan includes different levels of analysis depth, report
+                            frequency, and consultation services. Check our pricing page for detailed information about
+                            each plan's features.
                         </div>
                     </div>
                 </div>
@@ -156,39 +185,50 @@
                 <!-- Technical -->
                 <div class="accordion-item" data-category="technical">
                     <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq4">
                             How accurate are the AI predictions and analysis?
                         </button>
                     </h2>
                     <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                            Our AI models are trained on vast amounts of business data and are continuously updated. While no prediction can be 100% accurate, our system typically achieves 85-90% accuracy in market trend predictions and business viability assessments. We combine AI insights with real-world market data to provide the most reliable recommendations possible.
+                            Our AI models are trained on vast amounts of business data and are continuously updated.
+                            While no prediction can be 100% accurate, our system typically achieves 85-90% accuracy in
+                            market trend predictions and business viability assessments. We combine AI insights with
+                            real-world market data to provide the most reliable recommendations possible.
                         </div>
                     </div>
                 </div>
 
                 <div class="accordion-item" data-category="general">
                     <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq5">
                             How long does the validation process take?
                         </button>
                     </h2>
                     <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                            The basic validation process can be completed within 24-48 hours. However, for more comprehensive analysis and detailed reports, it may take 3-5 business days. We also offer expedited services for urgent requirements.
+                            The basic validation process can be completed within 24-48 hours. However, for more
+                            comprehensive analysis and detailed reports, it may take 3-5 business days. We also offer
+                            expedited services for urgent requirements.
                         </div>
                     </div>
                 </div>
 
                 <div class="accordion-item" data-category="technical">
                     <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq6">
                             How do you ensure the security of my business idea?
                         </button>
                     </h2>
                     <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                            We take data security very seriously. All your information is encrypted using industry-standard protocols, and we have strict NDAs in place. Our platform uses advanced security measures including end-to-end encryption, secure data centers, and regular security audits to protect your intellectual property.
+                            We take data security very seriously. All your information is encrypted using
+                            industry-standard protocols, and we have strict NDAs in place. Our platform uses advanced
+                            security measures including end-to-end encryption, secure data centers, and regular security
+                            audits to protect your intellectual property.
                         </div>
                     </div>
                 </div>
@@ -196,25 +236,20 @@
         </div>
     </section>
 
-        <!-- FOOTER -->
+    <!-- FOOTER -->
     <footer class="site-footer section-base">
         <div class="container">
             <div class="row g-4 align-items-start">
                 <div class="col-lg-5 col-md-12">
-                    <a class="navbar-brand fw-bold mb-2 d-inline-block  " href="#home">Idea Validator</a>
+                    <a class="navbar-brand fw-bold mb-2 d-inline-block" href="#home" aria-label="Idea Validator home">
+                        <img src="assets/images/logo.png" alt="Idea Validator logo" height="40" loading="lazy">
+                    </a>
                     <p class=" -50">AI-driven validation and market insights to turn ideas into winning
                         products. Fast, data-backed, and tailored to your industry.</p>
-
-                    <form class="subscribe-form d-flex mt-3" id="subscribeForm">
-                        <input type="email" class="form-control form-control-sm me-2" id="subscribeEmail"
-                            placeholder="Your email" aria-label="Email">
-                        <button class="btn btn-sm btn-glass" type="submit">Subscribe</button>
-                    </form>
-                    <div id="subscribeMessage" class="small mt-2" aria-live="polite"></div>
                 </div>
 
                 <div class="col-lg-3 col-md-6">
-                    <h6 class=" ">Quick links</h6>
+                    <h6 class="links-title">Quick links</h6>
                     <ul class="list-unstyled">
                         <li><a href="#features" class="footer-link">Features</a></li>
                         <li><a href="#pricing" class="footer-link">Pricing</a></li>
@@ -224,8 +259,9 @@
                 </div>
 
                 <div class="col-lg-4 col-md-6">
-                    <h6 class=" ">Contact</h6>
-                    <p class=" -50 small mb-2">hello@idea-validate.ai<br>+1 (555) 123-4567</p>
+                    <h6 class="contact-title">Contact</h6>
+                    <p class="email"><a href="mailto:hello@idea-validate.ai">hello@idea-validate.ai</a></p>
+                    <p class="number"><a href="tel:+1 (555) 123-4567">+1 (555) 123-4567</a></p>
                     <div class="d-flex gap-3 mt-2">
                         <a href="#" class="social-link" aria-label="Twitter"><i
                                 class="fa-brands fa-twitter fa-lg"></i></a>
@@ -249,20 +285,21 @@
     <!-- Scripts: jQuery, Bootstrap, AOS, Chart.js, CountUp.js -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.nice-select.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/countup.js@2.0.8/dist/countUp.umd.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             // FAQ Search functionality
-            $('#faqSearch').on('keyup', function() {
+            $('#faqSearch').on('keyup', function () {
                 const searchTerm = $(this).val().toLowerCase();
-                
-                $('.accordion-item').each(function() {
+
+                $('.accordion-item').each(function () {
                     const question = $(this).find('.accordion-button').text().toLowerCase();
                     const answer = $(this).find('.accordion-body').text().toLowerCase();
-                    
+
                     if (question.includes(searchTerm) || answer.includes(searchTerm)) {
                         $(this).fadeIn();
                     } else {
@@ -272,16 +309,16 @@
             });
 
             // FAQ Category filtering
-            $('.category-tab').on('click', function() {
+            $('.category-tab').on('click', function () {
                 const category = $(this).data('category');
-                
+
                 $('.category-tab').removeClass('active');
                 $(this).addClass('active');
-                
+
                 if (category === 'all') {
                     $('.accordion-item').fadeIn();
                 } else {
-                    $('.accordion-item').each(function() {
+                    $('.accordion-item').each(function () {
                         if ($(this).data('category') === category) {
                             $(this).fadeIn();
                         } else {
@@ -289,12 +326,6 @@
                         }
                     });
                 }
-            });
-
-            // Initialize AOS
-            AOS.init({
-                duration: 800,
-                once: true
             });
         });
     </script>
