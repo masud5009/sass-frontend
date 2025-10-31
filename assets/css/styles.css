@@ -26,6 +26,10 @@ body {
   background: #fff;
   color: var(--primary-color);
 }
+a{
+  text-decoration:  none;
+  color: var(--dark-color);
+}
 
 
 html {
