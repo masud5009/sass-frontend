@@ -1,4 +1,3 @@
-// Main JS for interactivity and animations
 $(function () {
   // Initialize AOS (disable on small devices to reduce heavy effects)
   AOS.init({
@@ -18,16 +17,16 @@ $(function () {
   });
 
   // Hide scroll-down chevrons once user scrolls past hero
-  function toggleScrollChev() {
-    var heroBottom = $('#home').offset().top + $('#home').outerHeight();
-    if ($(window).scrollTop() > heroBottom - 80) {
-      $('.scroll-down-wrap').fadeOut(200);
-    } else {
-      $('.scroll-down-wrap').fadeIn(200);
-    }
-  }
-  $(window).on('scroll resize', toggleScrollChev);
-  toggleScrollChev();
+  // function toggleScrollChev() {
+  //   var heroBottom = $('#home').offset().top + $('#home').outerHeight();
+  //   if ($(window).scrollTop() > heroBottom - 80) {
+  //     $('.scroll-down-wrap').fadeOut(200);
+  //   } else {
+  //     $('.scroll-down-wrap').fadeIn(200);
+  //   }
+  // }
+  // $(window).on('scroll resize', toggleScrollChev);
+  // toggleScrollChev();
 
   // Navbar shadow when scrolled
   function toggleNavbarShadow() {
@@ -157,38 +156,6 @@ $(function () {
   $('#testimonialCarousel').carousel({ interval: 6000, pause: 'hover', ride: 'carousel' });
   //testimonial slider end
 
-  // Contact form handling
-  $('#contactForm').on('submit', function (e) {
-    e.preventDefault();
-
-    // Get form data
-    const formData = {
-      name: $('#nameInput').val(),
-      email: $('#emailInput').val(),
-      subject: $('#subjectInput').val(),
-      message: $('#messageInput').val()
-    };
-
-    // Get submit button
-    const submitBtn = $(this).find('button[type="submit"]');
-    const originalText = submitBtn.html();
-
-    // Show loading state
-    submitBtn.prop('disabled', true)
-      .html('<i class="fas fa-spinner fa-spin me-2"></i>Sending...');
-
-    // Simulate API call - Replace this with your actual API call
-    setTimeout(() => {
-      // Reset form
-      this.reset();
-
-      // Reset button
-      submitBtn.prop('disabled', false).html(originalText);
-
-      // Show success message (you can customize this)
-      alert('Message sent successfully!');
-    }, 1500);
-  });
 
   // Blog search functionality
   $('.blog-search input').on('keyup', function () {
@@ -226,6 +193,42 @@ $(function () {
         }
       });
     }
+  });
+
+
+
+  /**
+   * Real-time subdomain preview
+   */
+  $('#username').on('input', function () {
+    const username = $(this).val().toLowerCase().replace(/[^a-z0-9]/g, '');
+    $('.subdomain').text(username || 'yourname');
+  });
+
+  // Password strength checker
+  $('#password').on('input', function () {
+    const password = $(this).val();
+
+    // Check requirements
+    const requirements = {
+      length: password.length >= 8,
+      uppercase: /[A-Z]/.test(password),
+      lowercase: /[a-z]/.test(password),
+      number: /[0-9]/.test(password),
+      special: /[!@#$%^&*]/.test(password)
+    };
+
+    // Update requirement indicators
+    Object.keys(requirements).forEach(req => {
+      const $requirement = $(`.requirement-item[data-requirement="${req}"]`);
+      if (requirements[req]) {
+        $requirement.addClass('valid').removeClass('invalid');
+        $requirement.find('i').removeClass('fa-circle').addClass('fa-check');
+      } else {
+        $requirement.addClass('invalid').removeClass('valid');
+        $requirement.find('i').removeClass('fa-check').addClass('fa-circle');
+      }
+    });
   });
 
 });
