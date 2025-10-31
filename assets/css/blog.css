@@ -52,7 +52,7 @@
 
 .category-filter:hover,
 .category-filter.active {
-    background: var(--gradient-1);
+    background: var(--primary-color);
     border-color: transparent;
     color: var(--white-color);
 }
@@ -159,7 +159,7 @@
 
 .page-link:hover,
 .page-link.active {
-    background: var(--gradient-1);
+    background: var(--primary-color);
     border-color: transparent;
     color: var(--white-color);
 }

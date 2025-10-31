@@ -149,7 +149,7 @@
     left: 0;
     right: 0;
     height: 2px;
-    background: var(--gradient-1);
+    background: var(--primary-color);
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -209,7 +209,7 @@
 
 .payment-category:hover,
 .payment-category.active {
-    background: var(--gradient-1);
+    background: var(--primary-color);
     border-color: transparent;
 }
 
@@ -230,7 +230,7 @@
 
 /* Button Styles */
 .btn-checkout {
-    background: var(--gradient-1);
+    background: var(--primary-color);
     color: #fff;
     border: none;
     padding: 15px 30px;

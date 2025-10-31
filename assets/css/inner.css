@@ -1,0 +1,118 @@
+/* Contact Section Styles */
+.contact-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-section .contact-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
+.contact-section .contact-info-wrapper .contact-card {
+    background: var(--light-color);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+}
+
+.contact-section .contact-info-wrapper .contact-card .card-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--primary-color);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.contact-section .contact-info-wrapper .contact-card .card-icon i {
+    font-size: 1.5rem;
+    color: var(--white-color);
+}
+
+.contact-section .contact-info-wrapper .contact-card h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+
+.contact-section .contact-info-wrapper .contact-card p {
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
+.contact-section .contact-form-wrapper {
+    background: var(--light-color);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 2.5rem;
+}
+
+.contact-form-wrapper .section-header .title {
+    font-weight: 600;
+}
+
+.contact-form-wrapper .contact-form .form-floating .form-control {
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    height: 60px;
+    padding: 1rem 1rem 0rem;
+}
+
+.contact-form-wrapper .contact-form .form-floating textarea.form-control {
+    height: 150px;
+    resize: none;
+}
+
+.contact-form-wrapper .contact-form .form-floating .form-control:focus {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid (--border-color);
+    box-shadow: none;
+    background-color: var(--white-color);
+}
+
+.contact-form-wrapper .contact-form .form-floating label {
+    padding: 1rem;
+}
+
+.contact-form-wrapper .contact-form .form-floating>.form-control:focus~label,
+.contact-form-wrapper .contact-form .form-floating>.form-control:not(:placeholder-shown)~label {
+    transform: scale(0.85) translateY(-0.75rem);
+}
+
+.contact-form-wrapper .contact-form .btn-primary {
+    padding: 0.8rem 2rem;
+    font-weight: 500;
+}
+
+.map-section {
+    position: relative;
+    z-index: 1;
+}
+
+.map-section .map-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 2rem 0;
+}
+
+
+@media (max-width: 991px) {
+    .contact-form-wrapper {
+        padding: 1.5rem;
+    }
+
+    .contact-info-wrapper {
+        margin-bottom: 2rem;
+    }
+}
+
+.inner-banner-taitel{
+    color: var(--white-color);
+}

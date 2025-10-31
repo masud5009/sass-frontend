@@ -191,7 +191,7 @@
 
 /* Submit Button */
 .btn-signup {
-    background: var(--gradient-1);
+    background: var(--primary-color);
     color: #fff;
     border: none;
     padding: 14px 30px;

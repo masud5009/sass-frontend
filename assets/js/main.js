@@ -67,16 +67,6 @@ $(function () {
     });
   });
 
-  // Feature modal
-  $('.feature-more').on('click', function (e) {
-    e.preventDefault();
-    var feature = $(this).data('feature') || 'Feature';
-    $('#featureModalLabel').text(feature);
-    $('#featureModalBody').html('<p>Detailed information about <strong>' + feature + '</strong>. This modal can show charts, examples, or links to docs.</p>');
-    var modal = new bootstrap.Modal(document.getElementById('featureModal'));
-    modal.show();
-  });
-
   // Subscribe form (footer) - simple front-end feedback
   $('#subscribeForm').on('submit', function (e) {
     e.preventDefault();
@@ -109,20 +99,6 @@ $(function () {
     }
   });
 
-  // If user clicks a feature that mentions validation score, show chart in modal
-  $('.feature-more[data-feature*="Validation"]').on('click', function () {
-    $('#featureModalBody').html('<div class="text-center p-3"><canvas id="modalScoreChart" width="240" height="240"></canvas><p class="mt-3">Your current validation score: <strong>72%</strong></p></div>');
-    // small timeout to ensure modal in DOM
-    setTimeout(function () {
-      var ctx2 = document.getElementById('modalScoreChart').getContext('2d');
-      new Chart(ctx2, {
-        type: 'doughnut',
-        data: { labels: ['Valid', 'Risk'], datasets: [{ data: [72, 28], backgroundColor: ['#7f00ff', '#ff5a7d'] }] },
-        options: { cutout: '70%', plugins: { legend: { display: false } } }
-      });
-    }, 80);
-  });
-
   // Animated pulse on hero CTAs (subtle)
   setInterval(function () {
     $('.hero-cta').each(function (i, el) {
@@ -138,10 +114,10 @@ $(function () {
   });
 
   // Password visibility toggle
-  $('.password-toggle').on('click', function() {
+  $('.password-toggle').on('click', function () {
     const input = $(this).siblings('input'); // Changed to siblings to target direct input
     const icon = $(this).find('i');
-    
+
     if (input.attr('type') === 'password') {
       input.attr('type', 'text');
       icon.removeClass('fa-eye').addClass('fa-eye-slash');
@@ -152,17 +128,17 @@ $(function () {
   });
 
   // Login form submission
-  $('#loginForm').on('submit', function(e) {
+  $('#loginForm').on('submit', function (e) {
     e.preventDefault();
     // Add your login logic here
-    
+
     // Example animation feedback
     const btn = $(this).find('button[type="submit"]');
     const originalText = btn.html();
-    
+
     btn.prop('disabled', true)
-       .html('<i class="fas fa-spinner fa-spin me-2"></i>Signing in...');
-    
+      .html('<i class="fas fa-spinner fa-spin me-2"></i>Signing in...');
+
     // Simulate API call
     setTimeout(() => {
       btn.prop('disabled', false).html(originalText);
@@ -170,13 +146,21 @@ $(function () {
     }, 1500);
   });
 
-  // init bootstrap carousel with fade, autoplay and pause-on-hover for testimonials
+  //testimonial slider start
+  $('#testimonialCarousel .carousel-item').each(function () {
+    var $this = $(this);
+    var $next = $this.next();
+    if (!$next.length) $next = $this.siblings(':first');
+    $next.children().first().clone().appendTo($this);
+  });
+
   $('#testimonialCarousel').carousel({ interval: 6000, pause: 'hover', ride: 'carousel' });
+  //testimonial slider end
 
   // Contact form handling
-  $('#contactForm').on('submit', function(e) {
+  $('#contactForm').on('submit', function (e) {
     e.preventDefault();
-    
+
     // Get form data
     const formData = {
       name: $('#nameInput').val(),
@@ -184,36 +168,36 @@ $(function () {
       subject: $('#subjectInput').val(),
       message: $('#messageInput').val()
     };
-    
+
     // Get submit button
     const submitBtn = $(this).find('button[type="submit"]');
     const originalText = submitBtn.html();
-    
+
     // Show loading state
     submitBtn.prop('disabled', true)
-           .html('<i class="fas fa-spinner fa-spin me-2"></i>Sending...');
-    
+      .html('<i class="fas fa-spinner fa-spin me-2"></i>Sending...');
+
     // Simulate API call - Replace this with your actual API call
     setTimeout(() => {
       // Reset form
       this.reset();
-      
+
       // Reset button
       submitBtn.prop('disabled', false).html(originalText);
-      
+
       // Show success message (you can customize this)
       alert('Message sent successfully!');
     }, 1500);
   });
 
   // Blog search functionality
-  $('.blog-search input').on('keyup', function() {
+  $('.blog-search input').on('keyup', function () {
     const searchTerm = $(this).val().toLowerCase();
-    
-    $('.blog-card').each(function() {
+
+    $('.blog-card').each(function () {
       const title = $(this).find('h3').text().toLowerCase();
       const content = $(this).find('p').text().toLowerCase();
-      
+
       if (title.includes(searchTerm) || content.includes(searchTerm)) {
         $(this).parent().fadeIn();
       } else {
@@ -223,17 +207,17 @@ $(function () {
   });
 
   // Blog category filters
-  $('.category-filter').on('click', function() {
+  $('.category-filter').on('click', function () {
     const category = $(this).text().toLowerCase();
-    
+
     // Toggle active state
     $('.category-filter').removeClass('active');
     $(this).addClass('active');
-    
+
     if (category === 'all') {
       $('.blog-card').parent().fadeIn();
     } else {
-      $('.blog-card').each(function() {
+      $('.blog-card').each(function () {
         const cardCategory = $(this).data('category').toLowerCase();
         if (cardCategory === category) {
           $(this).parent().fadeIn();

@@ -64,7 +64,7 @@
 
 .blog-content blockquote {
     background: rgba(255, 255, 255, 0.03);
-    border-left: 4px solid var(--gradient-1);
+    border-left: 4px solid var(--primary-color);
     padding: 2rem;
     margin: 2rem 0;
     border-radius: 0 12px 12px 0;
@@ -93,7 +93,7 @@
 }
 
 .blog-tag:hover {
-    background: var(--gradient-1);
+    background: var(--primary-color);
     border-color: transparent;
     color: var(--white-color);
     text-decoration: none;
@@ -184,7 +184,7 @@
 }
 
 .share-button:hover {
-    background: var(--gradient-1);
+    background: var(--primary-color);
     border-color: transparent;
     color: var(--white-color);
 }
