@@ -55,6 +55,7 @@ h5 {
   z-index: 1000;
   background: var(--white-color);
   transition: all 0.3s ease;
+  border-bottom: 1px solid var(--primary-color);
 }
 
 .navbar .account-btn {
@@ -152,7 +153,7 @@ h5 {
 
 @media (max-width: 991px) {
   .navbar .dropdown .dropdown-menu {
-    display: block;
+    display: none;
     visibility: visible;
     opacity: 1;
     transform: none;
