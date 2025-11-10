@@ -563,11 +563,8 @@ h5 {
   transition: all 0.3s ease;
 }
 
-.pricing-section .pricing-tabs .nav-link:hover:not(.active) {
-  background: rgba(255, 255, 255, 0.05);
-}
-
-.pricing-section .pricing-tabs .nav-link.active {
+.pricing-section .pricing-tabs .nav-link.active,
+.pricing-section .pricing-tabs .nav-link:hover {
   background: var(--primary-color);
   color: var(--white-color);
   box-shadow: 0 4px 12px rgba(127, 0, 255, 0.2);
@@ -1043,12 +1040,11 @@ footer a {
 /* Auth Section Styles */
 .auth-section {
   min-height: 100vh;
-  background: var(--primary-gradient);
 }
 
 .auth-image {
   position: relative;
-  background: url('https://images.unsplash.com/photo-1661956602116-aa6865609028?auto=format&fit=crop&q=80') center/cover;
+  background: url('../images/login-background.avif') center/cover;
 }
 
 .auth-image-inner {
@@ -1124,9 +1120,8 @@ footer a {
   height: 60px;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid var(--dark-color);
-  color: var(--dark-color) !important;
   border-radius: 12px;
-  padding: 1rem 1rem 0.5rem;
+    padding: 2rem 1rem 1rem;
   font-size: 1rem;
   transition: all 0.3s ease;
 }
@@ -1139,14 +1134,13 @@ footer a {
 
 .auth-form .form-floating label {
   padding: 1rem;
-  color: var(--white-color);
   font-size: 0.95rem;
 }
 
 .auth-form .form-floating>.form-control:focus~label,
 .auth-form .form-floating>.form-control:not(:placeholder-shown)~label {
   transform: scale(0.85) translateY(-0.75rem);
-  color: var(--dark-color)
+  color: var(--dark-color);
 }
 
 .auth-form .password-toggle {
@@ -1163,18 +1157,6 @@ footer a {
   transition: color 0.2s ease;
 }
 
-
-
-.auth-form .form-check-input {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.2);
-}
-
-.auth-form .form-check-input:checked {
-  background: var(--primary-color);
-  border-color: transparent;
-}
-
 .auth-form .form-check-label {
   color: var(--dark-color);
   font-size: 0.95rem;
@@ -1189,7 +1171,6 @@ footer a {
   transition: opacity 0.2s ease;
 }
 
-.forgot-link:hover,
 .signup-link:hover {
   opacity: 1;
   color: var(--white-color);
@@ -1203,6 +1184,9 @@ footer a {
   padding: 0.8rem 1.5rem;
   border-radius: 12px;
   transition: all 0.3s ease;
+}
+.btn-primary:hover{
+  background-color: var(--primary-color) !important;
 }
 
 .auth-divider {
@@ -1350,12 +1334,6 @@ footer a {
   font-size: 0.9rem;
   opacity: 0.8;
   transition: opacity 0.2s ease;
-}
-
-.forgot-link:hover,
-.signup-link:hover {
-  opacity: 1;
-  color: var(--white-color);
 }
 
 .divider {

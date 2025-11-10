@@ -61,7 +61,7 @@
     border: 1px solid var(--border-color);
     border-radius: 12px;
     height: 60px;
-    padding: 1rem 1rem 0rem;
+    padding: 2rem 1rem 1rem;
 }
 
 .contact-form-wrapper .contact-form .form-floating textarea.form-control {
@@ -676,7 +676,6 @@
 
 .preview-url {
     font-family: 'Courier New', monospace;
-    color: #fff;
     font-size: 14px;
 }
 
